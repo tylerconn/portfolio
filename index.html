@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link href="css/styles.css" type="text/css" rel="stylesheet">
+        <link href="css/styles.css" type="text/css" rel="stylesheet"/>
         <title>Tyler Conn</title>
     </head>
     <body>
@@ -19,7 +19,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <!--<a class="nav-link active" aria-current="page" href="#">Home</a>-->
                             <a class="nav-link" href="#">portfolio</a>
                             <a class="nav-link" href="#">about</a>
                             <a class="nav-link" href="#">contact</a>
@@ -29,19 +29,52 @@
                 </div>
             </nav>
         </header>
+
+        <!-- hero -->
         <div id="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        Column
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-12 col-sm-8 col-lg-6">
+                        <img src="images/profile_w_plant_fin.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                     </div>
-                    <div class="col">
-                        Column
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Hi! I'm Tyler</h1>
+                        <p class="lead">A UX Designer currently based in Atlanta, GA and I design experiences for humans, that are both easily understood and enjoyed.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">More about me</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <h1>Hi! I'm Tyler,</h1>
-            <h2>A UX Designer currently based in Atlanta, GA and I design experiences for humans, that are both easily understood and enjoyed.</h2>
+
+<!-- featured projects -->
+
+            <h1>Featured Projects</h1>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card mx-4 my-4 mx-lg-5">
+                        <img src="images/energy-wide.png" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <h5 class="card-title col order-md-2">Energy.gov - Redesign Project</h5>
+                            <p class="card-text col">The goal of this project was to evaluate the user experience of a government site and redesign it to improve any problems. </p>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+
+            <div class="row justify-content-end">
+                <div class="col-md-9">
+                    <div class="card mx-4 my-4 mx-lg-5">
+                        <img src="images/room-wide.png" class="card-img-top" alt="...">
+                        <div class="card-body row">
+                            <h5 class="card-title col">Room Shui - Design/Development Project</h5>
+                            <p class="card-text col">The goal of this project was to identify a problem that could be solved with a website, design a solution, and develop it. </p>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+
         </div>
     
     
@@ -57,7 +90,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
     </body>
-    <footer>
-
-    </footer>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <span class="text-muted">&copy; Tyler Conn</span>
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+            </ul>
+        </footer>
+    </div>
 </html>

@@ -1,0 +1,19 @@
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.card {
+    border: none;
+    border-radius: 0;
+}
+.card-img-top {
+    border-radius: 0;
+}
+
+
+
+
+/*@media (min-width: 760px) {
+    .card-opp {
+        align-items: flex-end;
+    }    
+}
