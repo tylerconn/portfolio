@@ -1,14 +1,43 @@
+body {
+    background-color: #F1f1f1;
+}
 .navbar-collapse {
     justify-content: flex-end;
 }
 .card {
     border: none;
     border-radius: 0;
+    background-color: #F1f1f1;
 }
 .card-img-top {
     border-radius: 0;
 }
+.card-img {
+    border-radius: 0;
+}
+.card-img-overlay {
+    border-radius: 0;
+}
+.card .cover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: opacity 0.15s ease-in;
+    opacity: 0;
+}
+.card:hover .cover {
+    opacity: 1
+}
 
+
+
+
+
+
+.energy {
+    background-color: #ABC4BC;
+}
+.room {
+    background-color: #E3C8C0;
+}
 
 
 
