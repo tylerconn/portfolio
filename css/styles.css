@@ -1,9 +1,73 @@
 body {
     background-color: #F1f1f1;
+    font-family: 'Nunito Sans', sans-serif;
 }
+
+/*nav*/
+
 .navbar-collapse {
     justify-content: flex-end;
 }
+.navbar {
+    background-color: #F1f1f1;
+    position: absolute;
+    width: 100%;
+}
+.navbar, .homepage {
+    background-color: #D0DCE8;
+}
+.navbar-brand {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.nav-link {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: .3rem 1rem;
+}
+.nav-link:hover {
+    border-bottom: 2px inset;
+    padding-bottom: 0;
+}
+
+/*hero*/
+
+.hero {
+    height: 100vh;
+    background-color: #D0DCE8;
+}
+.hero-container {
+    padding-top: 74px;
+    height: 100vh;
+}
+.hero-col {
+    max-height: 100%;
+}
+.hero-tag {
+    padding: 10% 5% 0 5%;
+}
+.img-hero {
+    max-width: 60%;
+    max-height: 95%;
+    z-index: 1;
+}
+.row {
+    overflow: hidden;
+}
+.lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+.intro-tag {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 1.5rem;
+}
+a.lead {
+    font-style: italic;
+}
+
 .card {
     border: none;
     border-radius: 0;
@@ -42,7 +106,11 @@ body {
     background-color: #E3C8C0;
 }
 
-
+@media (min-width: 992px) {
+    .img-hero {
+        max-width: 95%;
+    }    
+}
 
 /*@media (min-width: 760px) {
     .card-opp {
