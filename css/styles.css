@@ -2,24 +2,29 @@ body {
     background-color: #F1f1f1;
     font-family: 'Nunito Sans', sans-serif;
 }
-
+main {
+    padding-top: 74px;
+}
+.serifs {
+    font-family: 'Libre Baskerville', serif;
+}
 /*nav*/
 
 .navbar-collapse {
     justify-content: flex-end;
 }
 .navbar {
-    background-color: #F1f1f1;
+    background-color: #f1f1f1;
     position: absolute;
     width: 100%;
 }
-.navbar, .homepage {
+#home-nav {
     background-color: #D0DCE8;
 }
 .navbar-brand {
-    font-family: 'Libre Baskerville', serif;
     font-size: 2rem;
     font-weight: 700;
+   /* margin-left: 1rem; */
 }
 .nav-link {
     font-size: 1.25rem;
@@ -30,16 +35,19 @@ body {
     border-bottom: 2px inset;
     padding-bottom: 0;
 }
+.navbar-toggler {
+    border: none;
+}
 
 /*hero*/
 
 .hero {
-    height: 100vh;
+    height: calc(100vh - 74px);
     background-color: #D0DCE8;
 }
 .hero-container {
-    padding-top: 74px;
-    height: 100vh;
+    /*padding-top: 74px;*/
+    height: calc(100vh - 74px);
 }
 .hero-col {
     max-height: 100%;
@@ -61,12 +69,29 @@ body {
 
 }
 .intro-tag {
-    font-family: 'Libre Baskerville', serif;
     margin-bottom: 1.5rem;
+    font-size: 3rem;
+
 }
 a.lead {
     font-style: italic;
 }
+
+/*features*/
+
+.section-head {
+    margin: 3rem 0;
+}
+
+.card-title {
+    font-weight: 600;
+    padding: 0 .5rem;
+
+}
+.card-text {
+    padding: 0 .5rem;
+}
+
 
 .card {
     border: none;
@@ -81,9 +106,10 @@ a.lead {
 }
 .card-img-overlay {
     border-radius: 0;
+    padding: 5rem;
 }
 .item .cover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
     transition: opacity 0.15s ease-in;
     opacity: 0;
 }
@@ -95,6 +121,10 @@ a.lead {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+a.cover {
+    text-decoration: none;
 }
 
 
@@ -110,6 +140,10 @@ a.lead {
     .img-hero {
         max-width: 95%;
     }    
+    .hero-tag {
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: calc(var(--bs-gutter-x) * .5);
+    }
 }
 
 /*@media (min-width: 760px) {
