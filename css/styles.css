@@ -4,6 +4,7 @@ body {
 }
 main {
     padding-top: 74px;
+    padding-bottom: 3rem;
 }
 .serifs {
     font-family: 'Libre Baskerville', serif;
@@ -127,9 +128,13 @@ a.cover {
     text-decoration: none;
 }
 /*case studies*/
-.case-img {
+.case-img-banner {
     max-width: 100%;
     margin-top: 5vh;
+}
+.case-img {
+    max-width: 100%;
+
 }
 
 
