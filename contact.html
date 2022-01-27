@@ -34,7 +34,26 @@
         </header>
 
         <main>
-
+            <section class="container col-lg-8 col-xxl-6">
+                <h1 class="text-center section-head serifs">Let's Chat!</h1>
+                <form class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                    <div class="col mb-3">
+                        <label for="inputMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-dark">Send Message</button>
+                    </div>
+                </form>
+            </section>
         </main>
 
         <footer class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
