@@ -1,6 +1,7 @@
 body {
     background-color: #F1f1f1;
     font-family: 'Nunito Sans', sans-serif;
+    color: #2e394A;
 }
 main {
     padding-top: 74px;
@@ -8,6 +9,9 @@ main {
 }
 .serifs {
     font-family: 'Libre Baskerville', serif;
+}
+h1{
+    font-family: Urbanist, sans-serif;
 }
 /*nav*/
 
@@ -25,17 +29,20 @@ main {
 .navbar-brand {
     font-size: 2rem;
     font-weight: 700;
+    color: #2e394A !important;
    /* margin-left: 1rem; */
 }
 .nav-link {
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: 500;
     padding: .3rem 1rem;
+    color: #2e394A;
+
 }
-.nav-link:hover {
+/*.nav-link:hover {
     border-bottom: 2px inset;
     padding-bottom: 0;
-}
+}*/
 .navbar-toggler {
     border: none;
 }
@@ -70,18 +77,86 @@ main {
 
 }
 .intro-tag {
-    margin-bottom: 1.5rem;
-    font-size: 3rem;
+    font-size: 5rem;
+    font-weight: 600;
 
 }
 a.lead {
     font-style: italic;
 }
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -moz-transform: translateY(-30px);
+      -ms-transform: translateY(-30px);
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -moz-transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+}
+  
+.arrow {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -20px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/chevron-down.svg);
+    background-size: contain;
+}
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+.fade {
+    opacity: 0;
+    transition: 1s all ease-out;
+}
 
 /*features*/
 
 .section-head {
-    margin: 3rem 0;
+    margin: 5rem 0;
 }
 
 .card-title {
