@@ -14,7 +14,7 @@ h1{
     font-family: Urbanist, sans-serif;
 }
 .text-dark {
-    color: #2e394A;
+    color: #2e394A !important;
 }
 /*nav*/
 
@@ -194,6 +194,10 @@ a.lead {
 .item:hover .cover {
     opacity: 1
 }
+.card-link {
+    text-decoration: underline;
+    font-style: italic;
+}
 
 .cover {
     display: flex;
@@ -221,6 +225,9 @@ a.cover {
 .room {
     background-color: #E3C8C0;
 }
+.our-house {
+    background-color: #B3B7E5;
+}
 
 @media (min-width: 992px) {
     .img-hero {
@@ -230,10 +237,4 @@ a.cover {
         padding-left: calc(var(--bs-gutter-x) * .5);
         padding-right: calc(var(--bs-gutter-x) * .5);
     }
-}
-
-/*@media (min-width: 760px) {
-    .card-opp {
-        align-items: flex-end;
-    }    
 }
