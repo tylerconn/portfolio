@@ -199,6 +199,9 @@ a.cover {
     max-width: 100%;
 
 }
+.teammate {
+    margin-bottom: 0;
+}
 /*contact*/
 .form-control {
     border-radius: 0;
