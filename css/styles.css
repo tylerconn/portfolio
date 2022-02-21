@@ -26,6 +26,7 @@ h1{
     background-color: #f1f1f1;
     position: absolute;
     width: 100%;
+    z-index: 100;
 }
 #home-nav {
     background-color: #D0DCE8;
@@ -191,6 +192,13 @@ a.cover {
     text-decoration: none;
 }
 /*case studies*/
+.case-title::after {
+    margin-top: 10px;
+    height: 5px;
+    width: 200px;
+    display: block;
+    content: "";
+}
 .case-img-banner {
     max-width: 100%;
     margin-top: 5vh;
@@ -211,10 +219,19 @@ a.cover {
 .energy {
     background-color: #ABC4BC;
 }
+.energy-accent::after {
+    background-color: #ABC4BC;
+}
 .room {
     background-color: #E3C8C0;
 }
+.room-accent::after {
+    background-color: #E3C8C0;
+}
 .our-house {
+    background-color: #B3B7E5;
+}
+.our-house-accent::after {
     background-color: #B3B7E5;
 }
 
