@@ -17,6 +17,16 @@ h1{
 .text-dark {
     color: #2e394A !important;
 }
+#gototop {
+    position: fixed;
+    bottom: 3%;
+    right: 2rem;
+    z-index: 99;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+}
 /*nav*/
 
 .navbar-collapse {
