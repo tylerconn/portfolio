@@ -1,12 +1,8 @@
 <?php
-
-if($_POST["message"]) {
-
-mail("your@email.address", "Here is the subject line",
-
-$_POST["insert your message here"]. "From: an@email.address");
-
-}
+    if($_POST["inputMessage"]) {
+        mail("tylerconn@icloud.com", "Here is the subject line",
+        $_POST["insert your message here"]. "From: an@email.address");
+    }
 ?>
 <!doctype html>
 <html lang="en">
