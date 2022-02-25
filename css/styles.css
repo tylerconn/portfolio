@@ -17,15 +17,20 @@ h1{
 .text-dark {
     color: #2e394A !important;
 }
-#gototop {
+.gototop {
     position: fixed;
     bottom: 3%;
     right: 2rem;
     z-index: 99;
     border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    padding: 0;
+    padding: 5px;
+    display: none;
+}
+#scrollDown {
+    position: fixed;
+    bottom: 3%;
+    left: 15%;
+    z-index: 98;
 }
 /*nav*/
 
