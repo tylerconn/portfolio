@@ -1,13 +1,3 @@
-<?php
-
-if($_POST["message"]) {
-
-mail("your@email.address", "Here is the subject line",
-
-$_POST["insert your message here"]. "From: an@email.address");
-
-}
-?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -57,18 +47,18 @@ $_POST["insert your message here"]. "From: an@email.address");
             <section class="container col-lg-8 col-xxl-6">
               <!--  <img src="images/illustration.png">-->
                 <h1 class="text-center section-head display-3 my-5">Let's Chat!</h1>
-                <form class="row" method="post" action="contact.php">
+                <form class="row" method="post" name="contact_form" action="contact.php">
                     <div class="col-md-6 mb-3">
                         <label for="inputName" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="inputName" required>
+                        <input type="text" class="form-control" name="inputName" required>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="inputEmail" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail" required>
+                        <input type="email" class="form-control" name="inputEmail" required>
                     </div>
                     <div class="col mb-3">
                         <label for="inputMessage" class="form-label">Message</label>
-                        <textarea class="form-control" id="inputMessage" rows="5"></textarea>
+                        <textarea class="form-control" name="inputMessage" rows="5"></textarea>
                     </div>
                     <div class="col-12 d-flex justify-content-end">
                         <button type="submit" class="btn btn-dark">Send Message</button>
@@ -88,5 +78,8 @@ $_POST["insert your message here"]. "From: an@email.address");
             </ul>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script language=”JavaScript”>
+            var frmvalidator = new Validator("contactform"); frmvalidator.addValidation("inputName","req","Please provide your name"); frmvalidator.addValidation("inputEmail","req","Please provide your email"); frmvalidator.addValidation("inputEmail","email","Please enter a valid email address"); 
+        </script>
     </body>
 </html>
