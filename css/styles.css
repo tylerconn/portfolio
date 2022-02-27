@@ -19,7 +19,7 @@ h1{
 }
 .gototop {
     position: fixed;
-    bottom: 3%;
+    top: 3%;
     right: 2rem;
     z-index: 99;
     border-radius: 50%;
