@@ -32,3 +32,6 @@ $(document).scroll(function() {
         $('#scrollDown').fadeIn();
     }
 });
+//preloader
+$('.preloader').fadeOut("slow");
+    setTimeout(fade, 5000);
