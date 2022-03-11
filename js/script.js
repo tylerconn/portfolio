@@ -33,5 +33,7 @@ $(document).scroll(function() {
     }
 });
 //preloader
-$('.preloader').fadeOut("slow");
-    setTimeout(fade, 5000);
+$(window).on("load", function() {
+    $('.preloader').fadeOut("slow");
+    setTimeout(fade, 8000);
+});

@@ -262,18 +262,15 @@ a.cover {
     justify-content: center;
 }
 .preloader img {
-    animation: spin 3s linear infinite;
+    animation: spin 1.5s linear infinite;
     width: 100px;
 }
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
-    50% {
-        transform: rotate(360deg);
-    }
     100% {
-        transform: rotate(720deg);
+        transform: rotate(360deg);
     }
 }
 
