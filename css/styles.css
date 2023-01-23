@@ -1,48 +1,109 @@
 body {
-    margin: 8px 16px;
+    margin: 0;
     background-color: #F5F5F5;
+    font-family: 'Nunito Sans', sans-serif;
 }
 button {
     border: none;
     background-color: transparent;
     padding: 0;
 }
-
-.navbar {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+a {
+    text-decoration: none;
 }
-.navbar-name {
-    
+.font-prim {
+    font-family: Urbanist, sans-serif;
 }
-.navbar-icon{
-
-}
-.navbar-toggle {
-
-}
-.navbar-menu {
-    display: none;
-}
-.r-flex-cen {
-    display: flex;
+.justify-center {
     justify-content: center;
 }
-.r-flex-end {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.c-4 {
-    flex: 0 0 auto;
-    width: 33.3333333%;
+.justify-end {
+    justify-content: end;
 }
 .container {
     width: 100%;
     margin: 0 auto;
 }
+/* top nav */
+.topnav {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: lightgray;
+}
+.topnav-item {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    min-width: 33.33333333%;
+}
+.topnav-name {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.topnav-name img{
+    height: 1.5rem;
+}
+.topnav-logo {
+    padding: 0.5rem 1rem;
+    height: auto;
+}
+.topnav-logo img {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.topnav-icon {
+    cursor: pointer;
+    padding: 1rem;
+    /*border: 1px solid black;*/
+}
+.topnav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: chartreuse;
+    z-index: 1;
+    align-items: flex-end;
+    margin: 0;
+    padding: 0.5rem 0;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.topnav-menu li {
+    padding: 0.5rem 1rem;
+}
+.show {
+    display: flex;
+}
+
+/* hero */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.greeting {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.lead {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.hero-img {
+    display: flex;
+    align-items: flex-end;
+    overflow: clip;
+}
+.hero-img img {
+    max-width: 90%;
+    max-height: 100%;
+}
+
 @media (min-width: 576px) {
     .container, .conatiner-s {
         max-width: 540px;
@@ -57,10 +118,22 @@ button {
     .container, .conatiner-s {
         max-width: 960px;
     }
+    #menuButton {
+        display: none;
+    }
+    #menuDropdown {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: transparent;
+    }
 }
 @media (min-width: 1200px) {
     .container, .conatiner-s {
         max-width: 1140px;
+    }
+    .hero {
+        flex-direction: row;
     }
 }
 @media (min-width: 1400px) {
