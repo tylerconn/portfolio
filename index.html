@@ -16,12 +16,12 @@
     </head>
     <body>
         <header>
-            <nav class="topnav container">
+            <nav class="topnav container back-grey">
                 <div class="topnav-item">
-                    <a class="topnav-name"><img src="images/name.svg" /></a>
+                    <a class="topnav-logo"><img src="images/logo.svg" /></a>
                 </div>
                 <div class="topnav-item justify-center">
-                    <a class="topnav-logo"><img src="images/logo.svg" /></a>
+                    <a class="topnav-name"><img src="images/name.svg" /></a>
                 </div>
                 <div id="menuButton" class="topnav-item justify-end">
                     <button onclick="mobileMenuFunction()" class="topnav-icon">
@@ -29,23 +29,58 @@
                     </button>
                 </div>
                 <ul id="menuDropdown" class="topnav-item topnav-menu font-prim justify-end">
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="about.html">Bio</a></li>
-                    <li><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resume</a></li>
+                    <li><a href="portfolio.html" class="topnav-link">Portfolio</a></li>
+                    <li><a href="about.html" class="topnav-link">Bio</a></li>
+                    <li><a href="files/resume2022.pdf" class="topnav-link" target="_blank" ref="noreferrer noopener">Resume</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="container hero">
-                <div class="">
+            <section class="container hero">
+                <div class="intro">
                     <h1 class="greeting font-prim">Hi! I'm Tyler</h1>
                     <p class="lead">I'm a Product Designer currently based in Chicago and I design experiences for humans, that are both easily understood and enjoyed.</p>
                     <p><a href="about.html" class="">More about me</a></p>
                 </div>  
-                <div class="hero-img justify-end">
-                    <img src="images/porfolio_hero_2.png" alt="">
+                <div class="hero-graphic">
+                    <div class="graphic-outer">
+                        <div class="graphic-inner"></div>
+                    </div>
                 </div>
-            </div>
+                <!--<div class="hero-img">
+                    <img src="images/graphic.png" alt="">
+                </div>-->
+            </section>
+            <section class="container">
+                <div class="section-title">
+                    <h1 class="">Featured Projects</h1>
+                </div>
+                <div class="features">
+                    <div class="feature-card back-orange">
+                        <div class="feature-img">
+                            <img src="images/room-mock.png" />
+                        </div>
+                        <div class="feature-info">
+                            <h5>Room Shui - Design/Development Project</h5>
+                            <p>The goal of this project was to identify a problem that could be solved with a website, design a solution, and develop it.</p>
+                            <a>Read more</a>
+                        </div>
+                    </div>
+                    <div class="feature-card back-green">
+                        <div class="feature-img">
+                            <img src="images/energy-mock.png" />
+                        </div>
+                        <div class="feature-info">
+                            <h5>Energy.gov - Redesign Project</h5>
+                            <p>The goal of this project was to evaluate the user experience of a government site and redesign it to improve any problems.</p>
+                            <a>Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <a>More Projects</a>
+                </div>
+            </section>
         </main>
         <script src="js/script.js" type="text/javascript"></script>
     </body>
@@ -110,58 +145,13 @@
 
          hero
         <main>
-            <div class="hero">
-                <div class="container col-xxl-9 hero-container">
-                    <div class="row flex-lg-row h-100">
-                        <div class="hero-col col-lg-6 col-xxl-5 hero-tag">
-                            <h1 class="display-1 fw-bolder">Hi! I'm Tyler</h1>
-                            <p class="lead">I'm a Product Designer currently based in Chicago, IL and I design experiences for humans, that are both easily understood and enjoyed.</p>
-                            <p><a href="about.html" class="text-dark fst-italic lead">More about me</a></p>
-                        </div>  
-                        <div class="col-12 col-lg-6 col-xxl-7 d-flex align-items-end justify-content-end img-container hero-col">
-                            <img src="images/porfolio_hero_2.png" class="img-hero" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
 featured projects
             <section class="container">
-                <h1 class="text-center section-head display-3">Featured Projects</h1>
+                
 
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="card mb-5 mx-lg-3">
-                            <div class="card item">
-                                <img src="images/energy-wide.png" class="card-img rounded-0 energy" alt="...">
-                                <a class="card-img-overlay cover" href="energy-dept.html">
-                                    <p class="text-dark display-6">View Project</p>
-                                </a>    
-                            </div>
-                            <div class="card-body row">
-                                <h5 class="card-title col-12 col-lg order-lg-2 text-lg-end">Energy.gov - Redesign Project</h5>
-                                <p class="card-text col">The goal of this project was to evaluate the user experience of a government site and redesign it to improve any problems. </p>
-                            </div>
-                        </div>        
-                    </div>
-                </div>
    
-                <div class="row justify-content-end">
-                    <div class="col-md-9">
-                        <div class="card mb-5 mx-lg-3">
-                            <div class="card item">
-                                <img src="images/room-wide.png" class="card-img rounded-0 room" alt="...">
-                                <a class="card-img-overlay cover" href="room-shui.html">
-                                    <p class="text-dark display-6">View Project</p>
-                                </a>
-                            </div>
-                            <div class="card-body row">
-                                <h5 class="card-title col-12 col-lg">Room Shui - Design/Development Project</h5>
-                                <p class="card-text col">The goal of this project was to identify a problem that could be solved with a website, design a solution, and develop it. </p>
-                            </div>
-                        </div>        
-                    </div>
-                </div>    
                 
                 <p class="text-center"><a href="portfolio.html" class="text-dark fst-italic lead">More Projects</a></p>
             </section>

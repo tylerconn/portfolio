@@ -1,15 +1,41 @@
 body {
     margin: 0;
-    background-color: #F5F5F5;
+    background-color: whitesmoke;
     font-family: 'Nunito Sans', sans-serif;
+    color: #101010;
 }
 button {
     border: none;
     background-color: transparent;
     padding: 0;
 }
+header {
+    display:flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+h5 {
+    margin: 0 0 1rem 0;
+}
 a {
     text-decoration: none;
+    color: #101010;
+    cursor: pointer;
+}
+.back-grey {
+    background-color: whitesmoke;
+}
+.back-blue {
+    background-color: #57AAE7;
+}
+.back-green {
+    background-color: #3CC996;
+}
+.back-orange {
+    background-color: #FFA05B;
 }
 .font-prim {
     font-family: Urbanist, sans-serif;
@@ -29,7 +55,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    background-color: lightgray;
+  /*  background-color: lightgray;*/
+    margin: auto;
+    position: fixed;
+    align-items: center;
 }
 .topnav-item {
     flex: 1 1 0;
@@ -63,17 +92,20 @@ a {
 .topnav-menu {
     display: none;
     flex-direction: column;
-    background-color: chartreuse;
+    background-color: #101010;
     z-index: 1;
     align-items: flex-end;
     margin: 0;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     list-style: none;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 .topnav-menu li {
     padding: 0.5rem 1rem;
+}
+.topnav-link {
+    color: whitesmoke;
 }
 .show {
     display: flex;
@@ -82,41 +114,113 @@ a {
 /* hero */
 
 .hero {
-    height: 100vh;
+    height: calc(100vh - 3.5rem);
     display: flex;
     flex-direction: column;
+    padding-top: 3.5rem;
+    overflow: hidden;
+    /*justify-content: space-between*/
+}
+.intro {
+    padding: 0 1rem;
 }
 .greeting {
-    font-size: 3rem;
+    font-size: calc(1.625rem + 4.5vw);
     font-weight: 700;
+    margin: 1.5rem 0;
 }
 .lead {
     font-size: 1.5rem;
     font-weight: 400;
+    margin: 1rem 0;
 }
-.hero-img {
-    display: flex;
-    align-items: flex-end;
-    overflow: clip;
-}
-.hero-img img {
+/*.hero-img {
+    position: relative;
+    padding-left: 1rem;
+    overflow: hidden;
+    height: 50vh;
+}*/
+/*.hero-img img {
     max-width: 90%;
     max-height: 100%;
+}*/
+.hero-graphic {
+    display: flex;
+    flex: 1 1 auto;
+    padding-left: 1rem;
+}
+.graphic-outer {
+    --height: 80%;
+    background-color: aqua;
+    height: var(--height);
+    width: 100%;
+    border-bottom-left-radius: 1000px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+.graphic-inner {
+    --height: 75%;
+    background-color: blueviolet;
+    height: var(--height);
+    width: 100%;
+    border-radius: /*calc(var(--height) * 0.5)*/140px 0 0 140px;
+}
+.hero-shape {
+    height: 90%;
+    width: 90%;
+    background-color: blue;
+    border-radius: 50% 0 0 50%;
+
 }
 
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-card {
+    height: 500px;
+}
+.feature-img {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-img img{
+    max-width: 100%;
+
+}
+.feature-info {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .3);
+    
+}
+.more {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 @media (min-width: 576px) {
-    .container, .conatiner-s {
+    .container {
         max-width: 540px;
     }
 }
 @media (min-width: 768px) {
-    .container, .conatiner-s, .container-m {
+    .container {
         max-width: 720px;
     }
 }
 @media (min-width: 992px) {
-    .container, .conatiner-s {
+    .container {
         max-width: 960px;
+    }
+    .topnav-link {
+        color: inherit;
     }
     #menuButton {
         display: none;
@@ -126,10 +230,12 @@ a {
         flex-direction: row;
         align-items: center;
         background-color: transparent;
+        padding: 0;
+        height: 100%;
     }
 }
 @media (min-width: 1200px) {
-    .container, .conatiner-s {
+    .container {
         max-width: 1140px;
     }
     .hero {
@@ -137,7 +243,7 @@ a {
     }
 }
 @media (min-width: 1400px) {
-    .container, .conatiner-s {
+    .container {
         max-width: 1320px;
     }
 }
