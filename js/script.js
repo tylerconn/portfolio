@@ -1,7 +1,8 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function mobileMenuFunction() {
-    document.getElementById("menuDropdown").classList.toggle("show");
+    document.getElementById("menu-dropdown").classList.toggle("show");
+    document.getElementById("menu-toggle").classList.toggle("menu-toggle-active");
 }
   
 /* Close the dropdown menu if the user clicks outside of it
@@ -17,7 +18,12 @@ window.onclick = function(event) {
         }
     }
 }*/
-
+/*document.getElementById('menu-toggle').addEventListener(
+    'click',
+    function() {
+        this.classList.toggle('menu-toggle-active');
+    }
+  );*/
 
 
 
