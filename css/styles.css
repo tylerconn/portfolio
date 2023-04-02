@@ -142,16 +142,19 @@ ul {
     align-items: center;
 }
 .topnav-menu {
-    display: none;
+    /*display: none;*/
     flex-direction: column;
     background-color: #101010;
     z-index: 1;
     align-items: flex-end;
     margin: 0;
-    padding: 1rem 0;
+    padding: 0 1rem;
     list-style: none;
     font-size: 2.5rem;
     font-weight: 500;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
 .topnav-menu li {
     padding: 0.5rem 1rem;
@@ -160,8 +163,11 @@ ul {
     color: whitesmoke;
 }
 .show {
-    display: flex;
+    height: calc(100vh - 4.5rem);
+    transition: all 0.5s ease;
+    padding: 2rem 1rem;
 }
+
 
 /* mobile menu toggle button */
 
@@ -273,11 +279,14 @@ ul {
 }
 .feature-info {
     padding: 10%;
-    background-color: rgba(255, 255, 255, .3);
+    /*background-color: rgba(255, 255, 255, .3);*/
     flex: 1 1 auto;
 }
+.feature-title {
+    margin-top: 0;
+}
 .more {
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -400,8 +409,9 @@ ul {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: end;
         background-color: transparent;
-        padding: 0;
+        padding: 1rem 0;
         height: 100%;
     }
     .portfolio-grid {

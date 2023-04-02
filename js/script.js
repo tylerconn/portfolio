@@ -18,12 +18,7 @@ window.onclick = function(event) {
         }
     }
 }*/
-/*document.getElementById('menu-toggle').addEventListener(
-    'click',
-    function() {
-        this.classList.toggle('menu-toggle-active');
-    }
-  );*/
+
 
 
 
