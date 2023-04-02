@@ -270,12 +270,22 @@ ul {
     justify-content: center;
 }
 .feature-img {
-    padding: 10%;
     flex: 1 1 auto;
 }
-.feature-img img{
-    max-width: 100%;
+.card-img {
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+
+}
+.card-img img{
     max-height: 100%;
+    max-width: 100%;
 }
 .feature-info {
     padding: 10%;
@@ -305,14 +315,7 @@ ul {
     align-items: center;
     position: relative;
 }
-.portfolio-card-img {
-    padding: 10%;
-    background-color: aqua;
-    display: flex;
-    align-items: center;
-    transition-property: padding;
-    transition-duration: 0.5s;
-}
+
 /*.portfolio-card-img:hover {
     padding: 5%;
 }*/
@@ -321,11 +324,6 @@ ul {
 }
 .portfolio-card-overlay:hover {
     display: block;
-}
-
-.portfolio-card-img img{
-    max-width: 100%;
-    max-height: 100%;
 }
 .portfolio-card-overlay {
     background-color: aliceblue;
