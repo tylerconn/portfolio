@@ -1,10 +1,34 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function mobileMenuFunction() {
+    document.getElementById("topnav").classList.toggle("topnav-open");
     document.getElementById("menu-dropdown").classList.toggle("show");
-    document.getElementById("menu-toggle").classList.toggle("menu-toggle-active");
-}
-  
+    document.getElementById("menu-toggle").classList.toggle("text-white");
+    document.getElementById("topnav-name").classList.toggle("text-white");
+
+    /*changes menu button text*/
+    const menuToggle = document.getElementById("menu-toggle");
+    const initialText = "Menu";
+
+    if (menuToggle.textContent.match(initialText)) {
+        menuToggle.textContent = 'Close';
+    } else {
+        menuToggle.textContent = initialText;
+    }
+};
+ 
+/*const menuToggle = document.getElementById("menu-toggle");
+
+menuToggle.addEventListener('click', function menuClick() {
+    const initialText = "Menu";
+
+    if (menuToggle.textContent.match(initialText)) {
+        menuToggle.textContent = 'Close';
+    } else {
+        menuToggle.textContent = initialText;
+    }
+});*/
+
 /* Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {

@@ -35,102 +35,73 @@
     </head>
     <body>
         <header>
-            <div class="topnav-sec back-green">
-                <nav class="topnav container back-grey">
-                    <div class="topnav-item">
-                        <a class="topnav-logo" href="index.html"><img src="images/logo.svg" /></a>
-                    </div>
-                    <div class="topnav-item justify-center">
-                        <a class="topnav-name" href="index.html"><img src="images/name.svg" /></a>
-                    </div>
-                    <div id="menu-button" class="topnav-item justify-end">
-                        <a class="menu-toggle" id="menu-toggle" onclick="mobileMenuFunction()"><span></span></a>
+            <div class="topnav-sec">
+                <nav id="topnav" class="topnav container">
+                    <div class="topnav-basic">
+                        <div class="topnav-brand topnav-item">
+                            <!--<div class="topnav-item">
+                                <a class="topnav-logo" href="index.html"><img src="images/logo.svg" /></a>
+                            </div>-->
+                            <div class="">
+                                <a id="topnav-name" class="topnav-name font-prim" href="index.html">Tyler Conn</a>
+                            </div>
+                        </div>
+                        <div class="topnav-item justify-end" id="menu-button">
+                            <a class="topnav-link font-prim" id="menu-toggle" onclick="mobileMenuFunction()">Menu</a>
+                        </div>    
                     </div>
                     <ul id="menu-dropdown" class="topnav-item topnav-menu font-prim">
-                        <li><a href="portfolio.html" class="topnav-link">Portfolio</a></li>
-                        <li><a href="about.html" class="topnav-link">Bio</a></li>
-                        <li><a href="files/resume2022.pdf" class="topnav-link" target="_blank" ref="noreferrer noopener">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">Bio</a></li>
+                        <li class="link-border"><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
-            <section class="hero-sec back-orange">
-                <div class="container hero back-green">    
-                    <div class="intro">
-                        <h1 class="greeting font-prim">Hi! I'm Tyler</h1>
+            <section class="hero-sec back-blue">
+                <div class="hero">    
+                    <div class="intro container">
+                        <div class="greeting-M font-prim">
+                            <h1 class="greet-text">Hi! I'm Tyler</h1>
+                        </div>
+                        <div class="greeting-D font-prim">
+                            <h1 class="greet-text">Hi! </h1>
+                            <h1 class="greet-text greet-m">I'm </h1>
+                            <h1 class="greet-text greet-e">Tyler</h1>
+                        </div>
                         <p class="lead">I'm a Product Designer currently based in Chicago and I design experiences for humans, that are both easily understood and enjoyed.</p>
-                        <div>
+                        <div class="button">
                             <a class="arrowlink" href="about.html">More about me</a>
                         </div>
                     </div>  
                     <div class="hero-graphic">
-                        <img class="hero-img" src="images/hero-graphic.png" alt="" />
+                        <img class="hero-img" src="images/portrait.png" alt="" />
                     </div>
-                </div>
-            </section>
-<!--FEATURED PROJECTS SECTION-->
-            <section>
-                <div class="section-title">
-                    <h1 class="">Featured Projects</h1>
-                </div>
-                <div class="back-orange">
-                    <div class="feature-card container back-green">
-                        <div class="feature-half">
-                            <div class="feature-img card-img">
-                                <img src="images/cs-energy/energy-square.png" />
-                            </div>
-                        </div>
-                        <div class="feature-half">
-                            <div class="feature-info">
-                                <h2 class="feature-title">Energy.gov - Redesign Project</h2>
-                                <p>The goal of this project was to evaluate the user experience of a government site and redesign it to improve any problems.</p>
-                                <div>
-                                    <a class="arrowlink">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="back-green">
-                    <div class="feature-card order-alt container back-orange">
-                        <div class="feature-half">
-                            <div class="feature-img card-img">
-                                <img src="images/cs-room-shui/room-square.png" />
-                            </div>
-                        </div>
-                        <div class="feature-half">
-                            <div class="feature-info">
-                                <h2>Room Shui - Design/Development Project</h2>
-                                <p>The goal of this project was to identify a problem that could be solved with a website, design a solution, and develop it.</p>
-                                <div>
-                                    <a class="arrowlink">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="more">
-                    <a class="arrowlink" href="portfolio.html">More projects</a>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="back-blue">
             <div class="container footer">
-                <div class="footer-name">
-                    <span>&copy; Tyler Conn</span>
+                <div>
+                    <p>&copy; 2023 Design and Development by Tyler Conn</p>
+                    <p>Made with love in Chicago</p>
                 </div>
-                <ul class="footer-list">
-                    <li><a href="mailto:tyler@tylerconn.me">
-                        <img src="images/icons/envelope.svg" />
-                    </a></li>
-                    <li><a href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">
-                        <img src="images/icons/linkedin.svg" />
-                    </a></li>
-                    <li><a href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">
-                        <img src="images/icons/instagram.svg" />
-                    </a></li>
-                </ul>
+                <div>
+                    <p>Let's stay in touch!</p>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="mailto:tyler@tylerconn.me">Email
+                            <!--<img src="images/icons/envelope.svg" />-->
+                        </a></li>
+                        <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn
+                            <!--<img src="images/icons/linkedin.svg" />-->
+                        </a></li>
+                        <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram
+                            <!--<img src="images/icons/instagram.svg" />-->
+                        </a></li>
+                    </ul>
+    
+                </div>
             </div>
         </footer>
 
