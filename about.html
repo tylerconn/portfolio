@@ -35,61 +35,70 @@
     </head>
     <body>
         <header>
-            <div class="topnav-sec back-green">
-                <nav class="topnav container back-grey">
-                    <div class="topnav-item">
-                        <a class="topnav-logo" href="index.html"><img src="images/logo.svg" /></a>
-                    </div>
-                    <div class="topnav-item justify-center">
-                        <a class="topnav-name" href="index.html"><img src="images/name.svg" /></a>
-                    </div>
-                    <div id="menu-button" class="topnav-item justify-end">
-                        <a class="menu-toggle" id="menu-toggle" onclick="mobileMenuFunction()"><span></span></a>
+            <div class="topnav-sec">
+                <nav id="topnav" class="topnav container">
+                    <div class="topnav-basic">
+                        <div class="topnav-brand topnav-item">
+                            <!--<div class="topnav-item">
+                                <a class="topnav-logo" href="index.html"><img src="images/logo.svg" /></a>
+                            </div>-->
+                            <div class="">
+                                <a id="topnav-name" class="topnav-name font-prim" href="index.html">Tyler Conn</a>
+                            </div>
+                        </div>
+                        <div class="topnav-item justify-end" id="menu-button">
+                            <a class="topnav-link font-prim" id="menu-toggle" onclick="mobileMenuFunction()">Menu</a>
+                        </div>    
                     </div>
                     <ul id="menu-dropdown" class="topnav-item topnav-menu font-prim">
-                        <li><a href="portfolio.html" class="topnav-link">Portfolio</a></li>
-                        <li><a href="about.html" class="topnav-link" aria-current="page">Bio</a></li>
-                        <li><a href="files/resume2022.pdf" class="topnav-link" target="_blank" ref="noreferrer noopener">Resume</a></li>
+                        <li><a href="about.html" aria-current="page">Bio</a></li>
+                        <li><a href="portfolio.html" >Portfolio</a></li>
+                        <li class="link-border"><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
                     </ul>
                 </nav>
             </div>
-            <button type="button"  class="btn btn-light text-dark gototop" data-bs-toggle="tooltip" data-bs-placement="left" title="Go To Top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-bar-up" viewbox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
-                </svg>
-            </button>
         </header>
-        <main>
-            <div class="container">
-                <div class="bio">
-                    <h1 class="font-prim">Nice to meet you.</h1>
-                    <p>I came to be a UX Designer though a somewhat unconventional route. I graduated from college with a bachelors degree in accounting with a minor in Spanish. It was the challenge and feeling that it was an intricate puzzle to be solved, that originally drew me to accounting. And for similar reasons, I've always found languages to be fascinating.</p>
-                    <p>After graduation, I began my career as an auditor for EY in Atlanta. As an auditor, I was responsible for interviewing process owners, mapping out key company processes across entire organizations, developing testing plans, and executing those plans for our clients. While I enjoyed the opportunity to learn a lot about how organizations operate, after 3 years, it began to feel like I was just showing up to grade other's work rather than make any meaningful contributions to the growth of an organization, so I took another position as an accounting manager for Equifax.</p>
-                    <p>As an accounting manager, I had a greater opportunity to actually develop processes, including helping design an internal web app, and experience positive outcomes from within the organization, while feeling like I was a real contributor. However, I still felt like there was something missing and I wasn't being creatively fulfilled because accounting regulation is inherently rigid. I sometimes joke that the really “creative” accountants end up in jail. I've always sought out creative outlets such as photography and ceramics, but hadn't felt that fulfillment professionally. So I began to really think about what I could do for work and be passionate about.</p>
-                    <p>After talking to some designers and learning more about the UX design field, I began to think this might be my answer because it includes many of the things I've liked in my past positions such as collaboration, problem-solving, process improvement, while allowing me to actually create new and better experiences with more creativity. And as a frequent user of technology, I find myself critical of negative user experiences and how they can really affect a person's perception of a brand or company and their willingness to even attempt using the product, while really appreciating when I find a truly aesthetic and flawless user experience because it can make even the most mundane task a joy. There is also nothing more motivating for me than an annoying experience that can help fix, so I knew this would be fulfilling.</p>
-                    <p>Once I came to this decision, I enrolled in a 6 month UX/UI bootcamp at Georgia Institute of Technology. During this bootcamp, I had the opportunity to work on a number of individual and team design projects, many of which you can find on my Portfolio page. Through this experience, I've found that my prior hypothesis was true and this is what I want to do.</p>
+        <main class="back-grey">
+            <section>
+                <div class="page-title container">
+                    <h1 class="font-prim">Bio</h1>
                 </div>
-                <div class="bio-img">
-                    <img src="images/profile_w_plant_fin.png" alt="...">
+                <div class="font-prim container">
+                    <h2 class="bio-text greet-e">Nice to meet you!</h2>
                 </div>
-            </div>     
+                <div class="container bio-section">
+                    <div class="bio">
+                        <p>Although my creative career began in the late 90s in my grandmother's art studio, it took a slight detour after I studied accounting and Spanish in college, when I went to work as an auditor for EY and, later, an accounting manager for Equifax.</p>
+                        <p>While these jobs mostly satisfied my curiosity itch, they did nothing for my need to be creative, so I decided to change my career path and enroll in a 6-month intensive UX/UI Design bootcamp at Georgia Tech, which has been a fantastic decision 🙏.</p>
+                        <p>I currently work for CGI in their human-centered design and Strategic consulting team and work with clients to create innovative solutions with their users in mind.</p>
+                        <p>When I'm not working, you can find me throwing pots in a ceramic studio or out in the wild taking pictures and/or eating food.</p>
+                    </div>
+                    <div class="bio-img">
+                        <img src="images/bio-pic.png" alt="...">
+                    </div>    
+                </div>
+            </section>
         </main>
-        <footer>
+        <footer class="back-grey">
             <div class="container footer">
-                <div class="footer-name">
-                    <span>&copy; Tyler Conn</span>
+                <div>
+                    <p>&copy; 2023 Design and Development by Tyler Conn</p>
+                    <p>Made with love in Chicago</p>
                 </div>
-                <ul class="footer-list">
-                    <li><a class="footer-link" href="mailto:tyler@tylerconn.me">
-                        <img src="images/icons/envelope.svg" />
-                    </a></li>
-                    <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">
-                        <img src="images/icons/linkedin.svg" />
-                    </a></li>
-                    <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">
-                        <img src="images/icons/instagram.svg" />
-                    </a></li>
-                </ul>
+                <div>
+                    <p>Let's stay in touch!</p>
+                    <ul class="footer-list">
+                        <li><a class="footer-link" href="mailto:tyler@tylerconn.me">Email
+                            <!--<img src="images/icons/envelope.svg" />-->
+                        </a></li>
+                        <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn
+                            <!--<img src="images/icons/linkedin.svg" />-->
+                        </a></li>
+                        <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram
+                            <!--<img src="images/icons/instagram.svg" />-->
+                        </a></li>
+                    </ul>
+                </div>
             </div>
         </footer>
         <div class="preloader">
