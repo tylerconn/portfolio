@@ -1,21 +1,22 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-function mobileMenuFunction() {
-    document.getElementById("topnav").classList.toggle("topnav-open");
-    document.getElementById("menu-dropdown").classList.toggle("show");
-    document.getElementById("menu-toggle").classList.toggle("text-white");
-    document.getElementById("topnav-name").classList.toggle("text-white");
+function menuButton() {
+    document.querySelector(".topnav").classList.toggle("topnav-open");
 
-    /*changes menu button text*/
-    const menuToggle = document.getElementById("menu-toggle");
+    const currentText = document.querySelector("#menu-button");
     const initialText = "Menu";
+    const menuHeight = document.querySelector(".topnav-menu");
 
-    if (menuToggle.textContent.match(initialText)) {
-        menuToggle.textContent = 'Close';
+    if (currentText.textContent.match(initialText)) {
+        currentText.textContent = "Close";
+        menuHeight.style.height = "calc(100vh - 3.5rem)";
     } else {
-        menuToggle.textContent = initialText;
+        currentText.textContent = initialText;
+        menuHeight.style.height = "0";
     }
 };
+
+document.querySelector("#menu-button").addEventListener("click", menuButton);
  
 /*const menuToggle = document.getElementById("menu-toggle");
 
