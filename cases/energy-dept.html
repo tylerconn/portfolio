@@ -46,19 +46,21 @@
                 </div>
                 <div class="topnav-menu">
                     <menu class="list-plain">
-                        <li><a href="../about.html"></a>Bio</li>
-                        <li><a href="../portfolio.html">Work</a></li>
-                        <li><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
+                        <li class="menu-item"><a href="../about.html">Bio</a></li>
+                        <li class="menu-item"><a href="../portfolio.html">Portfolio</a></li>
+                        <li class="menu-item"><a href="../files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
                     </menu>
                 </div>
             </nav>
         </header>
-       <main>
+        <main>
             <section class="grid-container sec-first back-green">
                 <div class="grid-full-width case-title">
-                    <div class="title-desc item">
-                        <h5>Web Design Concept</h5>
-                        <h5>2021</h5>
+                    <div class="item">
+                        <ul class="title-desc list-plain">
+                            <li>Web Design Concept</li>
+                            <li>2021</li>
+                        </ul>
                     </div>
                     <div class="item">
                         <h1>Dept. of Energy</h1>
@@ -105,7 +107,7 @@
                 </div>
                 <div class="grid-item bg-outer grid-full-width">
                     <div class="back-green bg-inner">
-                        <div class="user-card back-white container">
+                        <div class="user-card back-white">
                             <div class="user-left ">
                                 <div class="user-img item">
                                     <img id="thomas" src="../images/cs-energy/user-thomas.jpg" alt="">
@@ -246,26 +248,22 @@
             </section>
         </main>
 
-        <footer>
-            <div class="container footer">
-                <div>
-                    <p>&copy; 2023 Design and Development by Tyler Conn</p>
-                    <p>Made with love in Chicago</p>
-                </div>
-                <div>
-                    <p>Let's stay in touch!</p>
-                    <ul class="footer-list">
-                        <li><a class="footer-link" href="mailto:tyler@tylerconn.me">Email
-
-                        </a></li>
-                        <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn
-
-                        </a></li>
-                        <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram
-
-                        </a></li>
-                    </ul>
-                </div>
+        <footer class="grid-container">
+            <div class="footer-item copywrite">
+                <p>&copy; 2023 Design and Development by Tyler Conn</p>
+                <p>Made with love in Chicago</p>
+            </div>
+            <div class="footer-item chat">
+                <p>Let's chat!</p>
+            </div>
+            <div class="footer-item email">
+                <a href="mailto:tyler@tylerconn.me">Email</a>
+            </div>
+            <div class="footer-item socials">
+                <menu class="list-plain">
+                    <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn</a></li>
+                    <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram</a></li>
+                </menu>
             </div>
         </footer>
         <div class="preloader">

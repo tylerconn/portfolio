@@ -35,121 +35,107 @@
     </head>
     <body>
         <header>
-            <div class="topnav-sec">
-                <nav id="topnav" class="topnav container">
-                    <div class="topnav-basic">
-                        <div class="topnav-brand topnav-item">
-                            <!--<div class="topnav-item">
-                                <a class="topnav-logo" href="index.html"><img src="images/logo.svg" /></a>
-                            </div>-->
-                            <div class="">
-                                <a id="topnav-name" class="topnav-name font-prim" href="index.html">Tyler Conn</a>
-                            </div>
-                        </div>
-                        <div class="topnav-item justify-end" id="menu-button">
-                            <a class="topnav-link font-prim" id="menu-toggle" onclick="mobileMenuFunction()">Menu</a>
-                        </div>    
+            <nav class="topnav">
+                <div class="topbar">
+                    <div class="topnav-left">
+                        <a href="index.html">Tyler Conn</a>
                     </div>
-                    <ul id="menu-dropdown" class="topnav-item topnav-menu font-prim">
-                        <li><a href="about.html">Bio</a></li>
-                        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
-                        <li class="link-border"><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <button id="menu-button">Menu</button>
+                </div>
+                <div class="topnav-menu">
+                    <menu class="list-plain">
+                        <li class="menu-item"><a href="about.html">Bio</a></li>
+                        <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="menu-item"><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
+                    </menu>
+                </div>
+            </nav>
         </header>
-        <main class="borderless back-grey">
-            <section class="">
-                <div class="page-title container">
-                    <h1 class="font-prim">Portfolio</h1>
-                </div>
-
-                <div class="portfolio-container">
-                    <div class="portfolio-grid">
-                        <!--Energy-->
-                        <div class="portfolio-card">
-                            <h2>Dept. of Energy</h2>
-                            <div>
-                                <p>Website [Concept]</p>
-                                <ul class="card-roles">
-                                    <li>Research</li>
-                                    <li>UX Design</li>
-                                    <li>Visual Design</li>
-                                </ul>
-                            </div>
-                            <div class="button card-button">
-                                <a class="arrowlink" href="energy-dept.html">View</a>
-                            </div>
-                        </div>  
-                        <!--Room Shui-->  
-                        <div class="portfolio-card">
-                            <h2>Room Shui</h2>
-                            <div>
-                                <p>Website [Concept]</p>
-                                <ul class="card-roles">
-                                    <li>UX Design</li>
-                                    <li>Visual Design</li>
-                                    <li>Development</li>
-                                </ul>
-                            </div>
-                            <div class="button card-button">
-                                <a class="arrowlink" href="room-shui.html">View</a>
-                            </div>
-                        </div>    
-                        <!--Our House-->
-                        <div class="portfolio-card">
-                            <h2>Our House</h2>
-                            <div>
-                                <p>Website [Concept]</p>
-                                <ul class="card-roles">
-                                    <li>UX Design</li>
-                                    <li>Visual Design</li>
-                                </ul>
-                            </div>
-                            <div class="button card-button">
-                                <a class="arrowlink" href="our-house.html">View</a>
-                            </div>
-                        </div>    
-                        <!--Co-Trip-->
-                        <div class="portfolio-card">
-                            <h2>Co-Trip</h2>
-                            <div>
-                                <p>Website [Concept]</p>
-                                <ul class="card-roles">
-                                    <li>Research</li>
-                                    <li>UX Design</li>
-                                    <li>Visual Design</li>
-                                </ul>
-                            </div>
-                            <div class="button card-button">
-                                <a class="arrowlink" href="">View</a>
-                            </div>
-                        </div>    
-
+        <main class="sec-first container">
+            <div class="page-title">
+                <h1 class="">Portfolio</h1>
+            </div>
+            <section class="portfolio-list">
+                <!--Energy-->
+                <div class="portfolio-item container card-green">
+                    <a href="cases/energy-dept.html"><span class="card-link"></span></a>
+                    <span></span>
+                    <div class="card-details">
+                        <ul class="list-plain card-desc">
+                            <li>Web Design Concept</li>
+                            <li>2021</li>
+                        </ul>
+                        <h2 class="card-title">Dept. of Energy</h2>
+                    
+                    </div>
+                    <div class="card-img back-green">
+                        <img src="images/cs-energy/energy-main.png" alt="">
                     </div>
                 </div>
-            </section>       
+                <!--Room Shui-->  
+                <div class="portfolio-item container card-orange">
+                    <a href="cases/room-shui.html"><span class="card-link"></span></a>
+                    <span></span>
+                    <div class="card-details">
+                        <ul class="list-plain card-desc">
+                            <li>Web Design Concept</li>
+                            <li>2021</li>
+                        </ul>
+                        <h2 class="card-title">Room Shui</h2>
+                    
+                    </div>
+                    <div class="card-img back-orange">
+                        <img src="images/cs-energy/energy-main.png" alt="">
+                    </div>
+                </div>
+                <!--Our House-->
+                <div class="portfolio-item container card-purple">
+                    <a href="cases/our-house.html"><span class="card-link"></span></a>
+                    <span></span>
+                    <div class="card-details">
+                        <ul class="list-plain card-desc">
+                            <li>Web Design Concept</li>
+                            <li>2021</li>
+                        </ul>
+                        <h2 class="card-title">Our House</h2>
+                    </div>
+                    <div class="card-img back-purple">
+                        <img src="images/cs-energy/energy-main.png" alt="">
+                    </div>
+                </div>
+                <!--Co-Trip-->
+                <div class="portfolio-item container card-blue">
+                    <a href=""><span class="card-link"></span></a>
+                    <span></span>
+                    <div class="card-details">
+                        <ul class="list-plain card-desc">
+                            <li>App Design Concept</li>
+                            <li>2021</li>
+                        </ul>
+                        <h2 class="card-title">Co-Trip</h2>
+                    </div>
+                    <div class="card-img back-blue">
+                        <img src="images/cs-energy/energy-main.png" alt="">
+                    </div>
+                </div>
+            </section>      
         </main>
-        <footer class="back-grey">
-            <div class="container footer">
-                <div>
-                    <p>&copy; 2023 Design and Development by Tyler Conn</p>
-                    <p>Made with love in Chicago</p>
-                </div>
-                <div>
-                    <p>Let's stay in touch!</p>
-                    <ul class="footer-list">
-                        <li><a class="footer-link" href="mailto:tyler@tylerconn.me">Email
-                            <!--<img src="images/icons/envelope.svg" />-->
-                        </a></li>
-                        <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn
-                            <!--<img src="images/icons/linkedin.svg" />-->
-                        </a></li>
-                        <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram
-                            <!--<img src="images/icons/instagram.svg" />-->
-                        </a></li>
-                    </ul>
-                </div>
+        <footer class="grid-container">
+            <div class="footer-item copywrite">
+                <p>&copy; 2023 Design and Development by Tyler Conn</p>
+                <p>Made with love in Chicago</p>
+            </div>
+            <div class="footer-item chat">
+                <p>Let's chat!</p>
+            </div>
+            <div class="footer-item email">
+                <a href="mailto:tyler@tylerconn.me">Email</a>
+            </div>
+            <div class="footer-item socials">
+                <menu class="list-plain">
+                    <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn</a></li>
+                    <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram</a></li>
+                </menu>
             </div>
         </footer>
         <div class="preloader">

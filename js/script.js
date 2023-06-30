@@ -1,7 +1,7 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function menuButton() {
-    document.querySelector(".topnav").classList.toggle("topnav-open");
+   // document.querySelector(".topnav").classList.toggle("topnav-open");
 
     const currentText = document.querySelector("#menu-button");
     const initialText = "Menu";
@@ -9,7 +9,7 @@ function menuButton() {
 
     if (currentText.textContent.match(initialText)) {
         currentText.textContent = "Close";
-        menuHeight.style.height = "calc(100vh - 3.5rem)";
+        menuHeight.style.height = "calc(100vh - 2.7rem)";
     } else {
         currentText.textContent = initialText;
         menuHeight.style.height = "0";

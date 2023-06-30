@@ -35,28 +35,21 @@
     </head>
     <body>
         <header>
-            <div class="topnav-sec">
-                <nav id="topnav" class="topnav container">
-                    <div class="topnav-basic">
-                        <div class="topnav-brand topnav-item">
-                            <!--<div class="topnav-item">
-                                <a class="topnav-logo" href="index.html"><img src="images/logo.svg" /></a>
-                            </div>-->
-                            <div class="">
-                                <a id="topnav-name" class="topnav-name font-prim" href="index.html">Tyler Conn</a>
-                            </div>
-                        </div>
-                        <div class="topnav-item justify-end" id="menu-button">
-                            <a class="topnav-link font-prim" id="menu-toggle" onclick="mobileMenuFunction()">Menu</a>
-                        </div>    
+            <nav class="topnav">
+                <div class="topbar">
+                    <div class="topnav-left">
+                        <a href="index.html">Tyler Conn</a>
                     </div>
-                    <ul id="menu-dropdown" class="topnav-item topnav-menu font-prim">
-                        <li><a href="about.html" aria-current="page">Bio</a></li>
-                        <li><a href="portfolio.html" >Portfolio</a></li>
-                        <li class="link-border"><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <button id="menu-button">Menu</button>
+                </div>
+                <div class="topnav-menu">
+                    <menu class="list-plain">
+                        <li class="menu-item"><a href="about.html">Bio</a></li>
+                        <li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+                        <li class="menu-item"><a href="files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
+                    </menu>
+                </div>
+            </nav>
         </header>
         <main class="back-grey">
             <section>
@@ -79,26 +72,22 @@
                 </div>
             </section>
         </main>
-        <footer class="back-grey">
-            <div class="container footer">
-                <div>
-                    <p>&copy; 2023 Design and Development by Tyler Conn</p>
-                    <p>Made with love in Chicago</p>
-                </div>
-                <div>
-                    <p>Let's stay in touch!</p>
-                    <ul class="footer-list">
-                        <li><a class="footer-link" href="mailto:tyler@tylerconn.me">Email
-                            <!--<img src="images/icons/envelope.svg" />-->
-                        </a></li>
-                        <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn
-                            <!--<img src="images/icons/linkedin.svg" />-->
-                        </a></li>
-                        <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram
-                            <!--<img src="images/icons/instagram.svg" />-->
-                        </a></li>
-                    </ul>
-                </div>
+        <footer class="grid-container">
+            <div class="footer-item copywrite">
+                <p>&copy; 2023 Design and Development by Tyler Conn</p>
+                <p>Made with love in Chicago</p>
+            </div>
+            <div class="footer-item chat">
+                <p>Let's chat!</p>
+            </div>
+            <div class="footer-item email">
+                <a href="mailto:tyler@tylerconn.me">Email</a>
+            </div>
+            <div class="footer-item socials">
+                <menu class="list-plain">
+                    <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn</a></li>
+                    <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram</a></li>
+                </menu>
             </div>
         </footer>
         <div class="preloader">
