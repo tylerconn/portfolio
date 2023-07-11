@@ -9,9 +9,7 @@
             content="" />
         <link rel="icon" href="images/icon16.png" type="image/png" sizes="16x16"/>
         <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
         <title>Tyler Conn</title>
         
         <script>
@@ -46,6 +44,7 @@
                 </div>
                 <div class="topnav-menu">
                     <menu class="list-plain">
+                        <li class="menu-item"><a href="index.html">Home</a></li>
                         <li class="menu-item"><a href="../about.html">Bio</a></li>
                         <li class="menu-item"><a href="../portfolio.html">Portfolio</a></li>
                         <li class="menu-item"><a href="../files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
@@ -53,157 +52,202 @@
                 </div>
             </nav>
         </header>
-        <main class="container col-lg-8">
-            <img src="images/room-wide.png" class="case-img-banner room">
-            <h1 class="mt-5 mb-4 case-title room-accent">Room Shui: A Room Design Solution</h1>
-            <section class="row mb-4">
-                <div class="col-md-6">
-                    <dl>
-                        <dt>Overview</dt>
-                        <dd>The goal of this project was to identify a problem that could be solved with a website, design a solution, and develop it.</dd>
-                        <dt>My Contribution</dt>
-                        <dd>For this project, I filled the role of UX Designer. Aside from my contributions to group brainstorming sessions and decision making, I primarily owned the creation and maintenance or our prototypes in Figma.</dd>
-                    </dl>
+        <main>
+            <section class="grid-container sec-first back-orange">
+                <div class="grid-full-width case-title">
+                    <div class="item">
+                        <ul class="title-desc list-plain">
+                            <li>Web Design Concept</li>
+                            <li>2021</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h1>Room Shui</h1>
+                    </div>
+    
                 </div>
-                <div class="col-md-6">
-                    <dl class="row">
-                        <dt class="col-sm-3">My Role</dt>
-                        <dd class="col-sm-9">UX Designer</dd>
-                        <dt class="col-sm-3">My Team</dt>
-                        <dd class="col-sm-9">
-                            <p class="teammate">Marissa Patterson (UX Researcher)</p>
-                            <p class="teammate">Leslie Wong (UX Researcher, Designer)</p>
-                            <p class="teammate">Lynn Faiola (Front-End Developer)</p>
-                        </dd>
-                        <dt class="col-sm-3">Tools</dt>
-                        <dd class="col-sm-9">Miro, Figma, Whimsical, VS Code, Github</dd>
-                        <dt class="col-sm-3">Timeframe</dt>
-                        <dd class="col-sm-9">3 weeks</dd>
-                        <dt class="col-sm-3">Deliverables</dt>
-                        <dd class="col-sm-9">High Fidelity Prototype & Website</dd>
-                    </dl>
-                </div>
-            </section>
-            <section>
-                <h3 class="fw-bold mb-3">Background</h3>
-                <p>Since the direction of this project was completely up to our team, we started by just listing any ideas we could think of for what we could make our website about. Among the ideas we came up with and discussed was building a platform that could assist with room organization and design, and as a couple of our team members were actually in the process of moving and redecorating, we thought this would be an interesting direction to take the project. We also weren't familiar with any other products or websites that were solving the problem we suspected	existed. Before we got too carried away with designing our product, however, we knew we needed some research to back up our assumptions that a product like this is something users needed.</p>
-                <h3 class="fw-bold mb-3">Who's the User?</h3>
-                <p>Once we had settled on the idea of designing and developing a website to help with room organization/design, our team set about trying to understand who would use something like this and what their specific needs would be. We conducted five user interviews and distributed an online survey that received 37 responses. From this research, we learned that the majority of those surveyed rearrange a room at least once a year, with another quarter of respondents rearranging every few years. We also learned that many of our respondents would like to design their spaces better and more frequently, but they don't know where to start and the process seems overwhelming.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/room-shui-case-study/affinity_diagram.jpg" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Affinity Diagram</figcaption>
-                </figure>
-                <p>With these insights we created a persona for our user, Edward, who is a real estate agent that spends a lot of time coming up with ideas for how to stage his homes. While we do not anticipate our user base will consist of only realtors, we chose to make our user persona for this project a realtor, because we believed they would be more frequent users and they needs would be more extensive.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/room-shui-case-study/user_persona.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">User Persona</figcaption>
-                </figure>
-                <p>In addition to the user persona, we created an empathy map to help further visualize who our user is and find ways we can help.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/room-shui-case-study/empathy_map.jpg" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Empathy Map</figcaption>
-                </figure>
-                <p>Next, we developed a storyboard to explore the user's experience and how we would like our product to fit into that experience.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/room-shui-case-study/storyboard.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Storyboard</figcaption>
-                </figure>
-            </section>
-            <section class="mb-5">
-                <h3 class="fw-bold mb-3">What's the Problem?</h3>
-                <p>With these insights and understanding of the user in mind we drafted a problem statement and hypothesis.</p>
-                <h5 class="fst-italic mb-3">Problem Statement</h5>
-                <p>Individuals between the ages of 25 and 40 do not often redesign an entire room because it's difficult to mentally visualize a better layout. Additionally, experimenting with new ideas takes a great deal of effort as it usually involves moving furniture around in a crowded space. As a result, people often just accumulate objects over time and place them where they fit. The resulting layout does not always meet their needs or make them happy.</p>
-                <h5 class="fst-italic mb-3">Hypothesis</h5>
-                <p>We believe that creating a website that allows people to design their spaces virtually using renderings of real-world objects and spaces will make it easier for them to create spaces that meet their needs.</p>
-            </section>
-            <section>
-                <h3 class="fw-bold mb-3">What's the Solution?</h3>
-                <p>Now we began brainstorming exactly how we would execute this hypothesis and solve the user's problem. Together, we created a “I like, I wish, What if” analysis to show what we know the user likes, what they wish they had that could provide immediate improvements to the user, and some possibilities that could be implimented in future iterations that may also provide value to our user.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/room-shui-case-study/brainstorming.jpg" class="figure-img img-fluid" alt="...">
-                </figure>
-                <p>Once we had some ideas for what we wanted to include in our product, our team put together a user flow outlining the steps the user would take navigating our product and we began drafting sketches of how each page would look.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/room-shui-case-study/user_flow.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">User Flow</figcaption>
-                </figure>
-                <div class="row py-3 py-md-5">
-                    <figure class="figure col-md-4">
-                        <img src="images/room-shui-case-study/sketch_home.jpg" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Home</figcaption>
-                    </figure>
-                    <figure class="figure col-md-4">
-                        <img src="images/room-shui-case-study/sketch_design.jpg" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Design</figcaption>
-                    </figure>
-                    <figure class="figure col-md-4">
-                        <img src="images/room-shui-case-study/sketch_styles.jpg" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Styles</figcaption>
-                    </figure>
-                </div>
-                <p>After we discussed our sketches and made a decision on the basic layout of the site, I began designing a low-fidelity prototype using Figma.</p>
-                <div class="row py-3 py-md-5">
-                    <figure class="figure col-md-4">
-                        <img src="images/room-shui-case-study/lofi_home.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Home</figcaption>
-                    </figure>
-                    <figure class="figure col-md-4">
-                        <img src="images/room-shui-case-study/lofi_design.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Design</figcaption>
-                    </figure>
-                    <figure class="figure col-md-4">
-                        <img src="images/room-shui-case-study/lofi_styles.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Styles</figcaption>
-                    </figure>
-                </div>
-                <h5 class="fst-italic mb-3">Usability Testing of the Prototype</h5>
-                <p>Once the low-fidelity prototype was complete, our team began usabiltiy testing with a handful of users. The objective of this testing was to identity any issues users may have with navigating to the room design page, starting a new room design from a template, and creating an account to save the created room.</p>
-                <p> Based on this round of testing, we learned that our users liked the overall interface and the process of starting to designa room, especially that they could start with a template if they didn't know the dimensions. However, some users did not immediately notice the new room button and were unsure how to start their first room.</p>
-                <h5 class="fst-italic mb-3">Visual Design</h5>
-                <p>At the same time, we began thinking of what style elements we wanted to include in our final design. We created a style guide to summarize many of our design choices to incorporate into our final high-fidelity protype. For our colors, we chose a sage green primary color, a salmon secondary color, and a light peach tertiary color, as well as black, white, and a light grey. We chose these main colors because we felt that they were homey and inviting, which are some of the feelings we hope that our product will allow users to acheive in their own spaces.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/room-shui-case-study/style_guide.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Style Guide</figcaption>
-                </figure>
-                <h5 class="fst-italic mb-3">Final Designs</h5>
-                <p>When it came to incorporating our style guide into our high-fidelity prototype, we had some decisions to make. One of the first one decisions was how some of our main colors would be placed on the site. We created two prototypes of the home page; one with our salmon color in the footer and our sage color for primary buttons, and another with the colors reversed. Based on some quick A/B testing we concluded that option B was the right one for our design because the green footer didn't feel as distracting to the user and the brighter salmon color on the button stood out more, drawing attention where we wanted it.</p>
-                <div class="row py-3 py-md-5">
-                    <figure class="figure col-md-6">
-                        <img src="images/room-shui-case-study/home_salmon.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Color Combo A</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/room-shui-case-study/home_sage.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Color Combo B</figcaption>
-                    </figure>
-                </div>
-                <p>Another change that we considered was  making the pages where user input was required, such as the login  and add room screens, modals instead of full pages that the user would be taken to. Our theory was that this would help the user maintain a sense of where they were in the site and not feel like they lost the location they were at previously.</p>
-                <div class="row py-3 py-md-5">
-                    <figure class="figure col-md-6">
-                        <img src="images/room-shui-case-study/add_room_full.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Full Page</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/room-shui-case-study/add_room_modal.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Modal</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/room-shui-case-study/login_full.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Full Page</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/room-shui-case-study/login_modal.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Modal</figcaption>
-                    </figure>
-                </div>
-                <p>At this point, we conducted a final round of usability testing and some things our testers said were that they liked our use of color, found the navigation to be intuitive, and liked our use of modals. This was great news and meant that we could finally move on to developing the design.</p>
-                <img src="images/room-shui-case-study/room_shui_gif.gif" class="case-img border border-dark my-3 my-md-5">
-                <p class="text-center"><a href="https://hlbigham.github.io/RoomShui/" class="text-dark fst-italic lead" target="_blank" ref="noreferrer noopener">View GitHub Page</a></p>
-                <p class="text-center"><a href="https://github.com/hlbigham/RoomShui" class="text-dark fst-italic lead" target="_blank" ref="noreferrer noopener">View GitHub Repo</a></p>
+                <div class="title-img grid-full-width">
+                    <img src="../images/cs-energy/energy-main.png" />
 
+                </div>
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Overview</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The goal of this project was to identify a problem that could be solved with a website, design a solution, and develop it.</p>
+                    <p>My primary role on this project was UX Designer. Aside from my contributions to group brainstorming sessions and decision making, I primarily owned the creation and maintenance or our prototypes in Figma.</p>
+                </div>
+                <div class="grid-item detail-1">
+                    <h4>Contributors</h4>
+                    <ul class="list-plain">
+                        <li>Marissa Patterson</li>
+                        <li>Leslie Wong</li>
+                        <li>Lynn Faiola</li>
+                    </ul>
+                </div>
+                <div class="grid-item detail-2">
+                    <h4>Tools</h4>
+                    <ul class="list-plain">
+                        <li>Figma</li>
+                        <li>Miro</li>
+                        <li>Whimsical</li>
+                        <li>VS Code</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
             </section>
 
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>User Research</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The first thing I did in this project was attempt to gain an understanding of who might use this website, how they would use it and what difficulties they may encounter. To accomplish this, I conducted a series of interviews with potential users, asking them to identify what they would like to do or find on this site and observing them attempt fulfill their goals. I then used the resulting insights to synthesize the following user persona.</p>
+                </div>
+                <div class="grid-item bg-outer grid-full-width">
+                    <div class="back-green bg-inner">
+                        <div class="user-card back-white">
+                            <div class="user-left ">
+                                <div class="user-img item">
+                                    <img id="thomas" src="../images/cs-energy/user-thomas.jpg" alt="">
+                                    <div class="user-name back-white">
+                                        <h3>Thomas Patterson</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user-right">
+                                <div class="user-quote item">
+                                    <q>I want to know what the government is doing to address the climate crisis and what role I can play.</q>
+                                </div>
+                                <div class="item">
+                                    <h4>Background</h4>
+                                    <p>Thomas is a 30-year-old software developer living in Atlanta. He is a new homeowner and spends some of his free time researching ways to improve his home and save money on bills.</p>    
+                                </div>
+                                <div class="item list">
+                                    <h4>Goals</h4>
+                                    <ul>
+                                        <li>Learn about renewable energy</li>
+                                        <li>Lower his energy costs</li>
+                                        <li>Read about the government's recent efforts to combat the climate crisis</li>
+                                    </ul>    
+                                </div>
+                                <div class="item list">
+                                    <h4>Pains</h4>
+                                    <ul>
+                                        <li>Doesn't know where to start his search for information</li>
+                                        <li>Finds the website confusing</li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>With these insights in mind, I mapped out the steps it would take the user to find information on an energy saving guide and information on alternative fuels. The resulting flow includes navigating 6 pages, sometimes via hyperlinks buried in the page, with three different primary navigation bars. At this point, the primary problem that I needed to solve for the user became clear.</p>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <div class="highlight back-green">
+                        <h3 class="">The Problem</h3>
+                        <p>Energy and climate-conscious consumers need a convenient source of information to help them reduce their energy costs and impact on the climate. However, this information is not easily obtained from the current Energy Department's website.</p>
+    
+                    </div>
+                </div>
+            </section>
+            
+           <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Ideation</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <div class="highlight back-green">
+                        <h3>My Hypothesis</h3>
+                        <p>If the current website was reorganized to make the information that users are looking for more easily and intuitively accessible, they would be able to save money and reduce their energy consumption.</p>    
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>To explore new ways of presenting the site's navigation, I created a randomized library with all the site's navigation items in sticky notes. Next, I resorted them into five categories and created a new sitemap with these categories as the primary navigation.</p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="figure-left">
+                            <figcaption>Unsorted</figcaption>
+                            <img src="../images/cs-energy/nav_unsorted.png" alt="">
+                        </figure>
+                        <figure class="figure-right">
+                            <figcaption>Sorted</figcaption>
+                            <img src="../images/cs-energy/nav_sorted.jpg" alt="">
+                        </figure>
+                        <figure class="figure-center">
+                            <figcaption>New Sitemap</figcaption>
+                            <img src="../images/cs-energy/sitemap.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Wireframing</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Once I had settled on the new information architecture for the site, I began creating a low-fidelity prototype in Figma. In addition to updating the navigation, I changed the home page to better reflect some of the desires and needs of the user, Thomas.</p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="grid-full-width figure-single">
+                            <img src="../images/cs-energy/lofi-wireframes.png" alt="">
+                        </figure>    
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The first change was adding a large hero carousel to showcase the most relevant and recent articles related to the work of the department. Below the hero, I created two columns: one with cards linking to articles explaining key department priorities and another with a feed of news and blog posts.</p>
+                </div>
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Visual Design</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Next, I began working on a style guide to develop my low-fidelity prototype into a high-fidelity prototype. When choosing my color palette, I decided to keep a few of the main colors (green, blue, gold) from the original site because my goal for this project was not to completely redefine the branding of the government agency and these colors have been long associated with the agency. I also felt that the green would make a great primary color for the site because it associated well with the agency's efforts to promote clean and green energy alternatives.</p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="grid-full-width">
+                            <figcaption>Style Guide</figcaption>
+                            <img src="../images/cs-energy/style-guide.png" alt="">
+                        </figure>    
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Once I had the style guide finalized, I incorporated it into my low-fidelity prototype and cleaned up the design to create a new high-fidelity prototype.</p>
+                </div>
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Usability Testing</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Finally, I tested my high-fidelity prototype for usability with a small group of potential users. The focus of this testing was similar to the testing I did at the very beginning of my project, only now it was using my prototype. I primarily asked the users to attempt two tasks that previous testing showed users having difficulty with, which were: finding information and incentives for alternative fuel vehicles, as well as finding recourses that would help them reduce home energy consumption and costs.</p>
+                </div>
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Outcomes</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The outcome of this project, according to my testing, is that users are now able to better understand what this website can be used for, what the department is currently prioritizing and working on, and how they can easily find the information they are looking for when visiting this site.</p>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Looking to the future, if I were to continue working on this website outside of this class, I would further build out some of the other pages beyond what was needed for usability testing and try to get an understand of some of the other potential users and some of the difficulties they might</p>
+                </div>
+            </section>
         </main>
         <footer class="grid-container">
             <div class="footer-item copywrite">

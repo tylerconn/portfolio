@@ -109,13 +109,13 @@ button {
     line-height: 1;
     border: 1px solid;
     border-radius: 2rem;
-
 }
+
 footer {
     position: sticky;
     bottom: 0;
 
-    z-index: -1;
+    z-index: 0;
     background-color: black;
     color: white;
 }
@@ -709,12 +709,13 @@ figure {
 }
 figcaption {
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
 .exhibit {
    margin: 0 -1rem;
 }
 figure img {
-    width: 100%;
+    max-width: 100%;
     object-fit: contain;
 }
 
@@ -744,22 +745,27 @@ figure img {
 }
 
 /* BIO SECTION */
-.bio-text {
-    font-weight: 500;
+.bio-greeting {
+    font-weight: var(--fw-regular);
     font-size: calc(1rem + 7vw);
+    margin-bottom: 1rem;
+    line-height: 1;
 }
-.bio-section {
-    display: flex;
-    flex-direction: column-reverse;
-}
+
 .bio-img {
     width: 100%;
+    border: 1px solid;
+    height: 70vw;
+    margin-bottom: 1rem;
 }
 .bio-img img {
     width: 100%;
-    height: 80vw;
+    height: 70vw;
     object-fit: cover;
-    object-position: 50% 20%;
+    object-position: 50% 25%;
+}
+.bio-text p {
+    margin-bottom: 1rem;
 }
 .page-title {
     margin-bottom: 1rem;
@@ -783,14 +789,14 @@ figure img {
     :root {
         --spacer-basic: 0.75rem;
         --spacer-full: 1.5rem;
-        font-size: 18px;
+        font-size: 20px;
     }
     .grid-container {
         grid-template-columns: repeat(12, 1fr);
     }
    
     .grid-item {
-        margin-bottom: 4vw;
+        margin-bottom: 6vw;
     }
     .grid-full-width{
         grid-column: 1 / span 12;
@@ -814,6 +820,7 @@ figure img {
     .highlight {
         margin: 0;
         padding: var(--spacer-basic);
+        border: 1px solid;
     }
     .topnav-menu li:hover {
         font-style: italic;
@@ -950,6 +957,8 @@ figure img {
     }
     .exhibit {
         margin: 0;
+        padding: 5vw;
+        box-sizing: border-box;
     }
     .figure-left{
         grid-column: 1 / span 6;
@@ -959,6 +968,13 @@ figure img {
     }
     .figure-center {
         grid-column: 3 / span 8;
+    }
+    .figure-single {
+        max-height: 70vh;
+    }
+    .figure-single img {
+        height: 100%;
+        width: 100%;
     }
     .container {
         padding: var(--spacer-full);
@@ -1054,6 +1070,18 @@ figure img {
     }
     .socials {
         grid-column: 11 / span 2;
+    }
+    .bio-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--spacer-full);
+    }
+    .bio-greeting, .bio-text {
+        grid-column: 1;
+    }
+    .bio-img {
+        grid-column: 2;
+        grid-row: 1 / span 2;
     }
 }
 /*@media (min-width: 1200px) {
