@@ -13,11 +13,26 @@ function menuButton() {
     } else {
         currentText.textContent = initialText;
         menuHeight.style.height = "0";
-    }
-};
+    };
+}
 
 document.querySelector("#menu-button").addEventListener("click", menuButton);
- 
+
+
+//const portfolioItem = document.querySelector(".portfolio-item")
+
+
+//portfolioItem.addEventListener("mouseenter", (e) => {
+    //portfolioItem.style.backgroundColor = "#000000";
+//});
+
+
+
+
+
+
+
+
 /*const menuToggle = document.getElementById("menu-toggle");
 
 menuToggle.addEventListener('click', function menuClick() {

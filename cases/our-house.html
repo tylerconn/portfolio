@@ -9,9 +9,7 @@
             content="" />
         <link rel="icon" href="images/icon16.png" type="image/png" sizes="16x16"/>
         <link rel="stylesheet" href="../css/styles.css" type="text/css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
         <title>Tyler Conn</title>
         
         <script>
@@ -39,184 +37,256 @@
                 <div class="topbar">
                     <div class="topnav-left">
                         <a href="../index.html">Tyler Conn</a>
-                        <span>&#64;</span>
-                        <a href="../portfolio.html">Work</a>
                     </div>
                     <button id="menu-button">Menu</button>
                 </div>
                 <div class="topnav-menu">
                     <menu class="list-plain">
-                        <li class="menu-item"><a href="../about.html">Bio</a></li>
+                        <li class="menu-item"><a href="../index.html">Home</a></li>
+                        <li class="menu-item"><a href="../about.html">About</a></li>
                         <li class="menu-item"><a href="../portfolio.html">Portfolio</a></li>
                         <li class="menu-item"><a href="../files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
                     </menu>
                 </div>
             </nav>
         </header>
-        <main class="container col-lg-8">
-            <img src="images/our-house-wide.png" class="case-img-banner our-house">
-            <h1 class="mt-5 mb-4 case-title our-house-accent">Our House: A Web Redesign Project</h1>
-            <section class="row mb-4">
-                <div class="col-md-6">
-                    <dl>
-                        <dt>Overview</dt>
-                        <dd>The goal of this project was to evaluate the user experience of a non-profit website and redesign it to resolve any deficiencies.</dd>
-                        <dt>My Contribution</dt>
-                        <dd>For this project, I filled the role of UX Designer. Aside from my contributions to group brainstorming sessions and decision making, I primarily owned the creation and maintenance or our prototypes in Figma.</dd>
-                    </dl>
-                </div>
-                <div class="col-md-6">
-                    <dl class="row">
-                        <dt class="col-sm-3">My Role</dt>
-                        <dd class="col-sm-9">UX Designer</dd>
-                        <dt class="col-sm-3">My Team</dt>
-                        <dd class="col-sm-9">
-                            <p class="teammate">Marissa Patterson (UX Researcher)</p>
-                            <p class="teammate">Leslie Wong (UX Researcher, Designer)</p>
-                            <p class="teammate">Lynn Faiola (UX Designer)</p>
-                        </dd>
-                        <dt class="col-sm-3">Tools</dt>
-                        <dd class="col-sm-9">Miro, Figma</dd>
-                        <dt class="col-sm-3">Timeframe</dt>
-                        <dd class="col-sm-9">3 weeks</dd>
-                        <dt class="col-sm-3">Deliverables</dt>
-                        <dd class="col-sm-9">High Fidelity Prototype</dd>
-                    </dl>
-                </div>
-            </section>
-            <section>
-                <h3 class="fw-bold mb-3">Who's the User?</h3>
-                <p>When first began to think about who the user that we wanted to focus on for this project was, we discussed who we thought would be the two main users of the existing website, those seeking help and those seeking to volunteer or donate. We believed that this website would serve as the primary, and possibly only way, for those seeking to give back to learn more about this organization and get matched with opportunities	for them to contribute, while those in need of assistance may not have access to internet and would more likely find help through the programs this organization runs in their local communities.</p>
-                <p>In order to create a user persona for this type of user, we conducted a series of interviews. Some of the things we were hoping to learn from our interviewees were how frequently they volunteered, what was preventing them from volunteering more, and how they chose which causes they support. We collected the insights gained in these interviews and organized them into an affinity diagram to show common themes.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/our-house-case-study/affinity.jpg" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Affinity Diagram</figcaption>
-                </figure>
-                <p>Based on some of these insights, we developed a persona named Jane Voorhees.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/our-house-case-study/user_persona.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">User Persona</figcaption>
-                </figure>
-                <p>To help us empathize further with Jane, we create a storyboard of their experience searching for volunteering opportunities and finding Our House where they are able to find the information and opportunities they are looking for.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/our-house-case-study/storyboard.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Storyboard</figcaption>
-                </figure>
-            </section>
-            <section class="mb-5">
-                <h3 class="fw-bold mb-3">What's the Problem?</h3>
-                <p>Now that we had an understanding of our user, Jane, and their needs, we began evaluating the current website to determine if there were any things that we could change to improve Jane's experience. Based on the insights we gained during our interviews, we came up with the follow problem and hypothesis.</p>
-                <h5 class="fst-italic mb-3">Problem Statement</h5>
-                <p>Jane is eager to make a meaningful impact on their community but doesn't know how their skills can best be utilized or what opportunities would work with their schedule.</p>
-                <h5 class="fst-italic mb-3">Hypothesis</h5>
-                <p>We believe that redesigning Our House's website to have a more streamlined design and updated navigation will help increase website traffic, and donation and volunteer numbers.</p>
-                <p>We know this because volunteers and donors are eager to offer their help but can feel indifferent due to the website's sterile design and disingenuous imagery.</p>
-            </section>
-            <section class="mb-5">
-                <h3 class="fw-bold mb-3">What's the Solution?</h3>
-                <p>With this hypothesis in mind, we began brainstorming different ideas of how to address the problem with our design. As a team we listed potential features and grouped them based on whether they were something in the current design that our user would like, whether they were something that our user wished was added, and whether they were something that our user would like but may not be possible at the moment.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/our-house-case-study/like_wish_what_if.jpg" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">I Like, I Wish, What if</figcaption>
-                </figure>
-                <p>Using these insights and this user wish-list we designed a sitemap for the website with seven primary navigation categories that we believe would be most useful for our target user, Jane. The first item is the About category where Jane could learn more about the organization and its history to ensure it aligns with their values. The Programs category provides detailed information on all the programs offered by the organization. There is also an opportunity for anyone seeking help to find it via the Get Help item. The Get Involved tab has specific information for those seeking to help. Finally, there is a News tab for anyone seeking updates and a Contact button were anyone visiting the site could get more information if needed.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/our-house-case-study/site_map.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Site Map</figcaption>
-                </figure>
-                <h5 class="fst-italic mb-3">Wireframing</h5>
-                <p>We began the wireframing process by each sketching out some ideas for how the pages could be structured.</p>
-                <div class="row py-3 py-md-5 mx-xl-5">
-                    <figure class="figure col-md-6">
-                        <img src="images/our-house-case-study/sketch_leslie.png" class="figure-img img-fluid border border-dark" alt="...">
-                        <figcaption class="figure-caption text-end">Sketch 1</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/our-house-case-study/sketch_lynn.png" class="figure-img img-fluid border border-dark" alt="...">
-                        <figcaption class="figure-caption text-end">Sketch 2</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/our-house-case-study/sketch_marissa.png" class="figure-img img-fluid border border-dark" alt="...">
-                        <figcaption class="figure-caption text-end">Sketch 3</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/our-house-case-study/sketch_tyler.png" class="figure-img img-fluid border border-dark" alt="...">
-                        <figcaption class="figure-caption text-end">Sketch 4</figcaption>
-                    </figure>                
-                </div>
-                <p>After discussing our sketches as a team, we decided we liked having the two cards on the home page for getting involved and getting help, as well as having the the mission statement of the organization, because it was very easy for visitors of the site to see exactly was this organization is trying to accomplish and that they can either receive help or contribute.</p>
-                <p>Once we settled on that plan, I began creating a low-fidelity Figma prototype of the home page and several other pages that we wanted to highlight.</p>
-                <div class="row py-3 py-md-5">
-                    <figure class="figure col-md-4">
-                        <img src="images/our-house-case-study/lofi-home.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Home</figcaption>
-                    </figure>
-                    <figure class="figure col-md-4">
-                        <img src="images/our-house-case-study/lofi-programs.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Programs</figcaption>
-                    </figure>
-                    <figure class="figure col-md-4">
-                        <img src="images/our-house-case-study/lofi-get-involved.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Get Involved</figcaption>
-                    </figure>
-                </div>
-                <div class="row ">
-                    <div class="col-md-6 col-lg-5">
-                        <p>For the mobile screens, we decided the keep the design elements consistent with how it was presented on larger screens, except the cards are stacked instead of horizontal and the primary navigation is now within a menu button. We decided to keep the Donate button separate from the menu dropdown, however, because we believed it was important for users, seeking to quickly make a contribution, find it easily, and the organization would definitely benefit from more contributions.</p>
+        <main>
+            <section class="sec-first back-purple case-landing">
+                <div class="case-header">
+                    <div class="item">
+                        <ul class="title-desc list-plain">
+                            <li>Web Design Concept</li>
+                            <li>2021</li>
+                        </ul>
                     </div>
-                    <div class="row col-md-6 col-lg-7 py-3 py-md-0 pb-md-5 px-md-5">
-                        <figure class="figure col-6">
-                            <img src="images/our-house-case-study/lofi-mobile.png" class="figure-img img-fluid" alt="...">
-                            <figcaption class="figure-caption text-end">Mobile Home</figcaption>
-                        </figure>
-                        <figure class="figure col-6">
-                            <img src="images/our-house-case-study/lofi-mobile-menu.png" class="figure-img img-fluid" alt="...">
-                            <figcaption class="figure-caption text-end">Menu Dropdown</figcaption>
-                        </figure>
-                    </div>
-                </div>
-                <h5 class="fst-italic mb-3">Usability Testing</h5>
-                <p>Once our Figma prototype was complete we asked a few volunteers to try to navigate through the site in the hope that we could identify and usability issues before we moved to our final design. Overall the feedback was positive and users were able to effectively navigate through the site and accomplish their tasks.</p>
-                <h5 class="fst-italic mb-3">UI Design</h5>
-                <p>Now that we had a functioning prototype and were comfortable with the structure of the website, we began putting together a style guide that we could apply to our design when we converted our low-fidelity prototype to high-fidelity. We kept a few of the design elements that we liked from the original site, such as the primary blue color, as well as some of the secondary colors, but not all of them because we thought there were too many in the original design and it didn't feel cohesive. We also changed some of the iconography from the original site. For example, we changed the upward arrow used for family services to an icon that depicts several humans of varying sized because we thought it was more easily understood.</p>
-                <figure class="figure py-3 py-md-5 mx-md-5">
-                    <img src="images/our-house-case-study/style_guide.png" class="figure-img img-fluid" alt="...">
-                    <figcaption class="figure-caption text-end">Style Guide</figcaption>
-                </figure>
-                <h5 class="fst-italic mb-3">Final Designs</h5>
-                <div class="row">
-                    <div class="col-md-4">
-                        <p>As we began creating our high-fidelity prototype, we decided to consider some feedback that we got from a tester during our prior usability testing, where they told us that it was difficult from them to distinguish where the navigation bar ended and the content of the page began because both were white and there was empty space. To help create this distinction, we decided to ad a subtle drop-shadow below the navigation bar.</p>
-                    </div>
-                    <div class="col-md-8 py-3 py-md-0 pb-md-5 px-md-5">
-                        <figure class="figure">
-                            <img src="images/our-house-case-study/navbar-old.png" class="figure-img img-fluid" alt="...">
-                            <figcaption class="figure-caption text-end">Original</figcaption>
-                        </figure>
-                        <figure class="figure">
-                            <img src="images/our-house-case-study/navbar-new.png" class="figure-img img-fluid" alt="...">
-                            <figcaption class="figure-caption text-end">Updated</figcaption>
-                        </figure>        
+                    <div class="item">
+                        <h1 class="case-title">Our House</h1>
                     </div>
     
                 </div>
-                <p>Another change we considered from our initial designs was the FAQ section on the volunteer page. Our original design had all the questions and answers visible as all times, but we began to think that felt cluttered and overwhelming. So we created a new version where all the questions were displayed but the answers were hidden until the user expanded the question.</p>
-                <p>To make sure this change was actually beneficial to our user, we conducted A/B testing and the unanimous feedback we received was that the accordion version of the FAQ section was the easiest to use.</p>
-                <div class="row py-3 py-md-5">
-                    <figure class="figure col-md-6">
-                        <img src="images/our-house-case-study/FAQ-before.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">Original Design</figcaption>
-                    </figure>
-                    <figure class="figure col-md-6">
-                        <img src="images/our-house-case-study/FAQ-after.png" class="figure-img img-fluid" alt="...">
-                        <figcaption class="figure-caption text-end">New Accordian Design</figcaption>
-                    </figure>
+                <div class="landing-img">
+                    <img class="" src="../images/cs-our-house/our-house-main.png" />
                 </div>
-                <p>With these changes made and the rest of our design updated to reflect our style guide, we finally had our high-fidelity prototype complete.</p>
-                <img src="images/our-house-case-study/our-house-desktop-gif.gif" class="case-img border border-dark mt-3 mt-md-5">
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Overview</h2>
+                </div>
+                <div class="grid-item case-sec-text detail-grid">
+                    <p class="inner-mb">Our House is a non-profit organization that provides assistance to families experiencing homelessnes and volunteering opportunities to anyone wishing to help. This case study focuses on the project's goal of evaluating the user experience of the existing website and redesigning it to address any deficiencies. As a UX Designer, my role was instrumental in the creation of a new user flow and maintenance of prototypes within Figma.</p>
+                    <div class="detail-1">
+                        <h4>Tools</h4>
+                        <ul class="list-plain">
+                            <li>Figma</li>
+                            <li>Miro</li>
+                        </ul>
+                    </div>
+                    <div class="detail-2">
+                        <h4>Contributors</h4>
+                        <ul class="list-plain">
+                            <li>Marissa Patterson</li>
+                            <li>Leslie Wong</li>
+                            <li>Lynn Faiola</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Challenge</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The challenge was to enhance the user experience of the Our House website by identifying and addressing usability issues. The project aimed to create a more streamlined design and improve navigation to increase website traffic, donations, and volunteer numbers.
+                    </p>
+                </div>
+            </section>
+
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>User Research</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>To gain insights into our target users, we conducted interviews with potential users to understand their volunteering habits, barriers to volunteering more, and factors influencing their cause selection. We collected the findings and organized them into an affinity diagram, which revealed common themes. From this research, we created a persona named Jane Voorhees and developed a storyboard to empathize with her experience.</p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="grid-full-width figure-single">
+                            <img src="../images/cs-our-house/affinity-diagram.png" alt="Affinity Diagram">
+                            <figcaption>Affinity Diagram</figcaption>
+                        </figure>    
+                    </div>
+                    <div class="exhibit back-purple grid-container">
+                        <div class="user-profile">
+                            <div class="user-pic border">
+                                <img id="thomas" src="../images/cs-our-house/user-jane.png" alt="">
+                            </div>
+                            <div class="user-name">
+                                <h3>Jane Voorhees</h3>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <q class="mb-1">Finding time to volunteer can be difficult, so I want to make sure I volunteer at a place I truly support.</q>
+                            <h4>Background</h4>
+                            <p class="mb-1">Jane is a retail manager and has an inconsistent work schedule, but they love to use their free time volunteering. They try to help a variety of non-profits, but like to do their research first so they feel confident they're helping a group aligned with their ideology. Jane prefers volunteering with small, local non-profits that don't necessarily have a lot of exposure.</p>
+                            <h4>Goals</h4>
+                            <ul class="list mb-1">
+                                <li>Find volunteer opportunities that align with their personal ideology</li>
+                                <li>Want to feel like they're making a difference and actually see the impact in person</li>
+                                <li>Meet like-minded people who share similar views on social causes</li>
+                            </ul>  
+                            <h4>Pains</h4>
+                            <ul class="list">
+                                <li>Doesn't know where to find out what skills are needed</li>
+                                <li>Hard to find time to volunteer</li>
+                                <li>Difficult and time-consuming to find a reputable charity/non-profit</li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p class="inner-mb">Based on our research, we formulated the following problem statement and hypothesis:</p>
+                    <div class="highlight h-purple inner-mb">
+                        <h3 class="">The Problem</h3>
+                        <p>Jane is eager to make a meaningful impact on their community, but doesn't know how their skills can best be utilized or what opportunities would be possible with their schedule.</p>
+                    </div>
+                    <div class="highlight h-purple">
+                        <h3 class="">Our Hypothesis</h3>
+                        <p>We believe that redesigning Our House's website to have a more streamlined design and updated navigation will help increase website traffic, as well as donation and volunteer numbers.</p>
+                    </div>
+                </div>
+            </section>
+           <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Concept Development</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Based on our research and user insights, we designed a sitemap with seven primary navigation categories that we believed would be most useful for Jane. These categories included About, Programs, Get Help, Get Involved, News, and Contact. We aimed to streamline the design and update the navigation to improve user engagement.
+                    </p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="grid-full-width figure-single">
+                            <img src="../images/cs-our-house/site_map.png" alt="New Sitemap">
+                            <figcaption>New Sitemap</figcaption>
+                        </figure>    
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Next, we each started to ideate with some sketches, and after team discussions, we finalized the home page layout with two cards for getting involved and getting help, along with the organization's mission statement, which we believe will enable users to immediately find what they are looking for.
+                    </p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-purple grid-container">
+                        <figure class="figure-left">
+                            <img class="border shadow" src="../images/cs-our-house/sketch_leslie.png" alt="">
+                        </figure>
+                        <figure class="figure-right">
+                            <img class="border shadow" src="../images/cs-our-house/sketch_lynn.png" alt="">
+                        </figure>
+                        <figure class="figure-left">
+                            <img class="border shadow" src="../images/cs-our-house/sketch_marissa.png" alt="">
+                        </figure>
+                        <figure class="figure-right">
+                            <img class="border shadow" src="../images/cs-our-house/sketch_tyler.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Iterative Design & Prototyping</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Using the sketches, I then created a low-fidelity prototype of the home page and several other key pages. We also considered the mobile experience, ensuring consistency with the desktop design while adapting elements to fit smaller screens. Usability testing was conducted with volunteers to identify any issues or usability concerns before proceeding to the final design.
+                    </p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-purple grid-container">
+                        <figure class="figure-3-1">
+                            <img class="border shadow" src="../images/cs-our-house/lofi-home.png" alt="">
+                            <figcaption>Home</figcaption>
+                        </figure>
+                        <figure class="figure-3-2">
+                            <img id="our-house-mobile-fig" class="border shadow" src="../images/cs-our-house/lofi-mobile.png" alt="">
+                            <figcaption>Mobile Home</figcaption>
+                        </figure>
+                        <figure class="figure-3-3">
+                            <img class="border shadow" src="../images/cs-our-house/lofi-get-involved.png" alt="">
+                            <figcaption>Get Involved</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The feedback from usability testing was positive, indicating that users could effectively navigate the site and accomplish their tasks. With the prototype's functionality confirmed, we developed a style guide for the high-fidelity design.</p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="grid-full-width figure-single">
+                            <img class="border shadow" src="../images/cs-our-house/style_guide.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Some design elements were retained from the original website, while others were modified for cohesiveness and improved understanding. We made design enhancements based on user feedback, such as adding a drop-shadow below the navigation bar to create a clear visual distinction between the navigation and content sections. We also adjusted the FAQ section to progressively disclose answers to questions through an accordion menu.</p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-purple grid-container">
+                        <figure class="figure-center">
+                            <img class="border shadow" src="../images/cs-our-house/navbar-old.png" alt="">
+                            <figcaption>Original</figcaption>
+                        </figure>
+                        <figure class="figure-center">
+                            <img class="border shadow" src="../images/cs-our-house/navbar-new.png" alt="">
+                            <figcaption>Update</figcaption>
+                        </figure>
+                    </div>
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="figure-left">
+                            <img class="border shadow" src="../images/cs-our-house/FAQ-before.png" alt="">
+                            <figcaption>Original</figcaption>
+                        </figure>
+                        <figure class="figure-right">
+                            <img class="border shadow" src="../images/cs-our-house/FAQ-after.png" alt="">
+                            <figcaption>Update</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Results & Impact</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The final design solution was a high-fidelity prototype and website that enabled users to quickly and easily find the information they were looking for and get involved in their community. Positive feedback received during usability testing validated our design decisions, indicating that our redesign of Our House's website would make a positive impact.</p>
+                </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-grey-lt grid-container">
+                        <figure class="grid-full-width figure-single">
+                            <img class="border shadow" src="../images/cs-our-house/our-house-desktop-gif.gif" alt="">
+                        </figure>    
+                    </div>
+                </div>
+            </section>
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Lessons Learned</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Throughout the project, we learned the importance of user research in understanding the needs and pain points of the target audience. Iterative design and usability testing were crucial in refining the prototype and addressing user concerns. Feedback from users during the A/B testing of the FAQ section informed our decision to adopt an accordion-style design, which was found to be more user-friendly.</p>
+                </div>
+            </section>
+            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Conclusion</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>Through this web redesign project, we successfully improved the user experience of Our House's website. The redesigned high-fidelity prototype showcased a streamlined design, updated navigation, and improved visual elements. The project demonstrated the effectiveness of user research, iterative design, and usability testing in creating a user-centered solution. By addressing the needs of users like Jane Voorhees, we aimed to increase website traffic, donations, and volunteer numbers, ultimately making a meaningful impact on the community.</p>
+                </div>
             </section>
         </main>
-
         <footer class="grid-container">
             <div class="footer-item copywrite">
                 <p>&copy; 2023 Design and Development by Tyler Conn</p>
@@ -240,6 +310,6 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-        <script src="js/script.js" type="text/javascript"></script>
+        <script src="../js/script.js" type="text/javascript"></script>
     </body>
 </html>
