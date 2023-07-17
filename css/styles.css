@@ -593,7 +593,7 @@ q {
 }
 .home-portrait img {
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     object-fit: cover;
     opacity: 100%;
 }
@@ -1210,16 +1210,19 @@ figure img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: var(--spacer-full);
+        border: 1px solid;
+        padding: var(--spacer-full);
     }
     .bio {
         grid-column: 1;
     }
     .bio-greeting {
-        font-size: calc(3rem + (100vw - 600px) / 15);
+        font-size: clamp(3rem, 8vw, 7rem );
     }
     .bio-img {
         grid-column: 2;
         grid-row: 1 / span 2;
+        margin-bottom: 0;
     }
     .sec-first {
         min-height: calc(100vh - 2.7rem);
@@ -1285,23 +1288,24 @@ figure img {
     .bio-greeting, .bio-text {
         margin-bottom: 1.5rem;
     }
-    .bio-greeting {
+    /*.bio-greeting {
         font-size: calc(5rem + (100vw - 900px) / 15);
-    }
+    }*/
 
     .bio-text, .link-about {
-        font-size: calc(1rem + (10vw - 90px) / 5);
+        /*font-size: calc(1rem + (10vw - 90px) / 5)*/
+        font-size: clamp(1rem, 2vw, 1.5rem);
     }
     .link-about {
-        padding: 0.5rem calc(1.5 * (1rem + (10vw - 90px) / 5)) 0.5rem 0;
+        padding: 0.5rem clamp(1.5rem, 3vw, 2.25rem) 0.5rem 0;
     }
     .link-about:hover {
-        padding-right: calc(1.75 * (1rem + (10vw - 90px) / 5));
+        padding-right: clamp(2rem, 4vw, 3rem);
     }
     .link-about::after {
-        height: calc(1.5 * (1rem + (10vw - 90px) / 5));
-        width: calc(1.5 * (1rem + (10vw - 90px) / 5));
-        top: 0;
+        height: clamp(1.5rem, 3vw, 2.25rem);
+        width: clamp(1.5rem, 3vw, 2.25rem);
+        top: 0.1rem;
     }
     .sec-first {
 
