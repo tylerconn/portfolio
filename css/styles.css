@@ -243,7 +243,7 @@ q {
     margin-top: 2.7rem;
     border-bottom: 1px solid;
     box-sizing: border-box;
-    min-height: calc(100vh - 2.7rem);
+
 }
 .title-desc {
     display: flex;
@@ -298,6 +298,9 @@ q {
 }
 .h-purple {
     border-left: 0.5rem solid var(--purple);
+}
+.h-green {
+    border-left: 0.5rem solid var(--green);
 }
 .highlight h3 {
     margin-bottom: 0.75rem;
@@ -1217,6 +1220,9 @@ figure img {
     .bio-img {
         grid-column: 2;
         grid-row: 1 / span 2;
+    }
+    .sec-first {
+        min-height: calc(100vh - 2.7rem);
     }
 }
 @media (min-width: 900px) {

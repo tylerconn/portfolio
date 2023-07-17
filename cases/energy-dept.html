@@ -45,9 +45,9 @@
                 <div class="topnav-menu">
                     <menu class="list-plain">
                         <li class="menu-item"><a href="index.html">Home</a></li>
-                        <li class="menu-item"><a href="../about.html">Bio</a></li>
+                        <li class="menu-item"><a href="../about.html">About</a></li>
                         <li class="menu-item"><a href="../portfolio.html">Portfolio</a></li>
-                        <li class="menu-item"><a href="../files/resume2022.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
+                        <li class="menu-item"><a href="../files/resume2023.pdf" target="_blank" ref="noreferrer noopener">Resumé</a></li>
                     </menu>
                 </div>
             </nav>
@@ -76,27 +76,33 @@
                 <div class="grid-item case-sec-header">
                     <h2>Overview</h2>
                 </div>
-                <div class="grid-item case-sec-text">
-                    <p>The goal of this project was to evaluate an existing government website, identify any problems with the user experience, and redesign the website to address these problems.</p>
-                </div>
-                <div class="grid-item detail-1">
-                    <h4>Roles</h4>
-                    <ul class="list-plain">
-                        <li>Researcher</li>
-                        <li>UX Designer</li>
-                        <li>UI Designer</li>
-                    </ul>
-                </div>
-                <div class="grid-item detail-2">
-                    <h4>Tools</h4>
-                    <ul class="list-plain">
-                        <li>Figma</li>
-                        <li>Miro</li>
-                    </ul>
+                <div class="grid-item case-sec-text detail-grid">
+                    <p class="inner-mb">This case study focuses on the evaluation and redesign of an existing government website. As the sole designer on the project, my responsibility encompassed all aspects of the process, including research, design, and testing.</p>
+                    <div class="detail-1">
+                        <h4>Roles</h4>
+                        <ul class="list-plain">
+                            <li>Researcher</li>
+                            <li>UX Designer</li>
+                            <li>UI Designer</li>
+                        </ul>
+                    </div>
+                    <div class="detail-2">
+                        <h4>Tools</h4>
+                        <ul class="list-plain">
+                            <li>Figma</li>
+                            <li>Miro</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
-
-            
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Challenge</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>The website suffered from various user experience problems, hindering users from finding relevant information about renewable energy, energy cost reduction, and the government's climate crisis initiatives. The initial attempts at using the website were confusing for users, indicating a need for improvement.</p>
+                </div>
+            </section>
             <section class="grid-container case-sec">
                 <div class="grid-item case-sec-header">
                     <h2>User Research</h2>
@@ -104,7 +110,35 @@
                 <div class="grid-item case-sec-text">
                     <p>The first thing I did in this project was attempt to gain an understanding of who might use this website, how they would use it and what difficulties they may encounter. To accomplish this, I conducted a series of interviews with potential users, asking them to identify what they would like to do or find on this site and observing them attempt fulfill their goals. I then used the resulting insights to synthesize the following user persona.</p>
                 </div>
-                <div class="grid-item bg-outer grid-full-width">
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-green grid-container">
+                        <div class="user-profile">
+                            <div class="user-pic border">
+                                <img id="thomas" src="../images/cs-energy/user-thomas.jpg" alt="">
+                            </div>
+                            <div class="user-name">
+                                <h3>Thomas Patterson</h3>
+                            </div>
+                        </div>
+                        <div class="user-details">
+                            <q class="mb-1">I want to know what the government is doing to address the climate crisis and what role I can play.</q>
+                            <h4>Background</h4>
+                            <p class="mb-1">Thomas is a 30-year-old software developer living in Atlanta. He is a new homeowner and spends some of his free time researching ways to improve his home and save money on bills.</p>
+                            <h4>Goals</h4>
+                            <ul class="list mb-1">
+                                <li>Learn about renewable energy</li>
+                                <li>Lower his energy costs</li>
+                                <li>Read about the government's recent efforts to combat the climate crisis</li>
+                            </ul>  
+                            <h4>Pains</h4>
+                            <ul class="list">
+                                <li>Doesn't know where to start his search for information</li>
+                                <li>Finds the website confusing</li>
+                            </ul>  
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="grid-item bg-outer grid-full-width">
                     <div class="back-green bg-inner">
                         <div class="user-card back-white">
                             <div class="user-left ">
@@ -141,28 +175,23 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <div class="grid-item case-sec-text">
-                    <p>With these insights in mind, I mapped out the steps it would take the user to find information on an energy saving guide and information on alternative fuels. The resulting flow includes navigating 6 pages, sometimes via hyperlinks buried in the page, with three different primary navigation bars. At this point, the primary problem that I needed to solve for the user became clear.</p>
-                </div>
-                <div class="grid-item case-sec-text">
-                    <div class="highlight back-green">
+                    <p class="inner-mb">With these insights in mind, I mapped out the steps it would take the user to find information on an energy saving guide and information on alternative fuels. The resulting flow includes navigating 6 pages, sometimes via hyperlinks buried in the page, with three different primary navigation bars. At this point, the primary problem that I needed to solve for the user became clear.</p>
+                    <div class="highlight h-green inner-mb">
                         <h3 class="">The Problem</h3>
                         <p>Energy and climate-conscious consumers need a convenient source of information to help them reduce their energy costs and impact on the climate. However, this information is not easily obtained from the current Energy Department's website.</p>
-    
+                    </div>
+                    <div class="highlight h-green">
+                        <h3 class="">My Hypothesis</h3>
+                        <p>If the current website was reorganized to make the information that users are looking for more easily and intuitively accessible, they would be able to save money and reduce their energy consumption.</p>
                     </div>
                 </div>
             </section>
             
            <section class="grid-container case-sec">
                 <div class="grid-item case-sec-header">
-                    <h2>Ideation</h2>
-                </div>
-                <div class="grid-item case-sec-text">
-                    <div class="highlight back-green">
-                        <h3>My Hypothesis</h3>
-                        <p>If the current website was reorganized to make the information that users are looking for more easily and intuitively accessible, they would be able to save money and reduce their energy consumption.</p>    
-                    </div>
+                    <h2>Concept Development</h2>
                 </div>
                 <div class="grid-item case-sec-text">
                     <p>To explore new ways of presenting the site's navigation, I created a randomized library with all the site's navigation items in sticky notes. Next, I resorted them into five categories and created a new sitemap with these categories as the primary navigation.</p>
@@ -170,16 +199,16 @@
                 <div class="grid-item grid-full-width">
                     <div class="exhibit back-grey-lt grid-container">
                         <figure class="figure-left">
-                            <figcaption>Unsorted</figcaption>
                             <img src="../images/cs-energy/nav_unsorted.png" alt="">
+                            <figcaption>Unsorted</figcaption>
                         </figure>
                         <figure class="figure-right">
+                            <img src="../images/cs-energy/nav_sorted.png" alt="">
                             <figcaption>Sorted</figcaption>
-                            <img src="../images/cs-energy/nav_sorted.jpg" alt="">
                         </figure>
                         <figure class="figure-center">
-                            <figcaption>New Sitemap</figcaption>
                             <img src="../images/cs-energy/sitemap.png" alt="">
+                            <figcaption>New Sitemap</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -187,61 +216,60 @@
             
             <section class="grid-container case-sec">
                 <div class="grid-item case-sec-header">
-                    <h2>Wireframing</h2>
+                    <h2>Iterative Design & Prototyping</h2>
                 </div>
                 <div class="grid-item case-sec-text">
-                    <p>Once I had settled on the new information architecture for the site, I began creating a low-fidelity prototype in Figma. In addition to updating the navigation, I changed the home page to better reflect some of the desires and needs of the user, Thomas.</p>
+                    <p>Once I had settled on the new information architecture for the site, I began creating a low-fidelity prototype in Figma. The redesigned homepage featured a rotating hero image highlighting important articles, alongside two columns of cards. One column displayed static articles related to department priorities, while the other column provided updated news and blog posts. A secondary navigation bar accompanied each primary navigation item. I also created a mobile-responsive version of the site to accommodate different devices.</p>
                 </div>
                 <div class="grid-item grid-full-width">
-                    <div class="exhibit back-grey-lt grid-container">
+                    <div class="exhibit back-green grid-container">
                         <figure class="grid-full-width figure-single">
                             <img src="../images/cs-energy/lofi-wireframes.png" alt="">
                         </figure>    
                     </div>
                 </div>
                 <div class="grid-item case-sec-text">
-                    <p>The first change was adding a large hero carousel to showcase the most relevant and recent articles related to the work of the department. Below the hero, I created two columns: one with cards linking to articles explaining key department priorities and another with a feed of news and blog posts.</p>
-                </div>
-            </section>
-            
-            <section class="grid-container case-sec">
-                <div class="grid-item case-sec-header">
-                    <h2>Visual Design</h2>
-                </div>
-                <div class="grid-item case-sec-text">
-                    <p>Next, I began working on a style guide to develop my low-fidelity prototype into a high-fidelity prototype. When choosing my color palette, I decided to keep a few of the main colors (green, blue, gold) from the original site because my goal for this project was not to completely redefine the branding of the government agency and these colors have been long associated with the agency. I also felt that the green would make a great primary color for the site because it associated well with the agency's efforts to promote clean and green energy alternatives.</p>
+                    <p>Usability testing of the low-fidelity prototype yielded positive feedback. Users found the navigation and layout of the homepage intuitive, providing them with a clear understanding of available content. The next step involved developing a style guide and transitioning the low-fidelity prototype into a high-fidelity version. The color palette retained the agency's main colors while incorporating green as the primary color to align with the agency's clean and green energy focus.</p>
                 </div>
                 <div class="grid-item grid-full-width">
                     <div class="exhibit back-grey-lt grid-container">
                         <figure class="grid-full-width">
+                            <img class="border shadow" src="../images/cs-energy/style-guide.png" alt="">
                             <figcaption>Style Guide</figcaption>
-                            <img src="../images/cs-energy/style-guide.png" alt="">
                         </figure>    
                     </div>
                 </div>
-                <div class="grid-item case-sec-text">
-                    <p>Once I had the style guide finalized, I incorporated it into my low-fidelity prototype and cleaned up the design to create a new high-fidelity prototype.</p>
-                </div>
             </section>
             
             <section class="grid-container case-sec">
                 <div class="grid-item case-sec-header">
-                    <h2>Usability Testing</h2>
-                </div>
-                <div class="grid-item case-sec-text">
-                    <p>Finally, I tested my high-fidelity prototype for usability with a small group of potential users. The focus of this testing was similar to the testing I did at the very beginning of my project, only now it was using my prototype. I primarily asked the users to attempt two tasks that previous testing showed users having difficulty with, which were: finding information and incentives for alternative fuel vehicles, as well as finding recourses that would help them reduce home energy consumption and costs.</p>
-                </div>
-            </section>
-            
-            <section class="grid-container case-sec">
-                <div class="grid-item case-sec-header">
-                    <h2>Outcomes</h2>
+                    <h2>Results & Impact</h2>
                 </div>
                 <div class="grid-item case-sec-text">
                     <p>The outcome of this project, according to my testing, is that users are now able to better understand what this website can be used for, what the department is currently prioritizing and working on, and how they can easily find the information they are looking for when visiting this site.</p>
                 </div>
+                <div class="grid-item grid-full-width">
+                    <div class="exhibit back-green grid-container">
+                        <figure class="grid-full-width">
+                            <img class="border shadow" src="../images/cs-energy/energy-desktop.gif" alt="">
+                        </figure>    
+                    </div>
+                </div>
+            </section>
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Lessons Learned</h2>
+                </div>
                 <div class="grid-item case-sec-text">
-                    <p>Looking to the future, if I were to continue working on this website outside of this class, I would further build out some of the other pages beyond what was needed for usability testing and try to get an understand of some of the other potential users and some of the difficulties they might</p>
+                    <p>Throughout the process, I realized the importance of conducting thorough user research to uncover pain points and inform the redesign. Iterative prototyping and usability testing allowed for continuous improvement based on user feedback. Retaining some aspects of the existing branding helped maintain familiarity while introducing enhancements.</p>
+                </div>
+            </section>
+            <section class="grid-container case-sec">
+                <div class="grid-item case-sec-header">
+                    <h2>Conclusion</h2>
+                </div>
+                <div class="grid-item case-sec-text">
+                    <p>By addressing the website's UX problems through an improved information architecture, intuitive navigation, and responsive design, users can now easily access valuable information on renewable energy, energy savings, and government initiatives. This redesign enhances the user experience and empowers energy and climate-conscious individuals to make informed decisions, leading to cost savings and reduced environmental impact.</p>
                 </div>
             </section>
         </main>
