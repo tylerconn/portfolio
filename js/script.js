@@ -26,7 +26,11 @@ document.querySelector("#menu-button").addEventListener("click", menuButton);
     //portfolioItem.style.backgroundColor = "#000000";
 //});
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.querySelector("body").classList.add("loaded");
+    }, 1400)
+  });
 
 
 
@@ -97,7 +101,7 @@ $(document).scroll(function() {
     }
 });
 //preloader
-$(window).on("load", function() {
+/*$(window).on("load", function() {
     $('.preloader').fadeOut("slow");
     setTimeout(fade, 8000);
-});
+   });*/
