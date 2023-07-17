@@ -1223,6 +1223,10 @@ figure img {
         grid-column: 2;
         grid-row: 1 / span 2;
         margin-bottom: 0;
+        max-height: 80vh;
+    }
+    .bio-img img {
+        max-height: 100%;
     }
     .sec-first {
         min-height: calc(100vh - 2.7rem);
