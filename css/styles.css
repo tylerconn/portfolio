@@ -879,9 +879,10 @@ figure img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 150ms linear;
 }
 .preloader {
-    animation: spin 1200ms ease-in-out 400ms infinite;
+    animation: spin 1200ms ease-in-out 300ms infinite;
     width: 30%;
 }
 .loaded .preloader-screen {

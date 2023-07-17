@@ -1,7 +1,6 @@
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function menuButton() {
-   // document.querySelector(".topnav").classList.toggle("topnav-open");
 
     const currentText = document.querySelector("#menu-button");
     const initialText = "Menu";
@@ -19,21 +18,22 @@ function menuButton() {
 document.querySelector("#menu-button").addEventListener("click", menuButton);
 
 
-//const portfolioItem = document.querySelector(".portfolio-item")
-
-
-//portfolioItem.addEventListener("mouseenter", (e) => {
-    //portfolioItem.style.backgroundColor = "#000000";
-//});
-
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.querySelector("body").classList.add("loaded");
     }, 1400)
-  });
+});
 
+function preload(e) {
 
+}
 
+document.querySelectorAll(".link-load").addEventListener("click", preload);
+
+function preloadAbout() {
+    document.querySelector("body").classList.add("preload");
+    setTimeout('document.location="http:www.tylerconn.me/about.html"', 3000)
+}
 
 
 
@@ -100,8 +100,4 @@ $(document).scroll(function() {
         $('#scrollDown').fadeIn();
     }
 });
-//preloader
-/*$(window).on("load", function() {
-    $('.preloader').fadeOut("slow");
-    setTimeout(fade, 8000);
-   });*/
+
