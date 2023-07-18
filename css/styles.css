@@ -112,7 +112,7 @@ button {
 }
 
 footer {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     z-index: 0;
     background-color: black;
