@@ -10,9 +10,18 @@
     font-weight: 600;
     font-style: normal;
 }
+@font-face {
+    font-family: "Mori";
+    src: url("../fonts/mori/PPMori-ExtraBold.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
 :root {
     --fw-regular: 400;
     --fw-semi-bold: 600;
+    --fw-extra-bold: 800;
+
+    --fs-base: calc(2vw + 1rem);
     /* COLORS */
     --blackish: #0F0F0F;
     --whitish: #FAFAFA;
@@ -31,6 +40,7 @@ body {
     margin: 0;
 }
 footer {
+    margin-top: 10vw;
     padding: 5vw;
     display: flex;
     flex-direction: column;
@@ -38,20 +48,29 @@ footer {
 }
 h2 {
     margin: 0;
-    font-weight: var(--fw-regular);
+    font-weight: var(--fw-semi-bold);
     font-size: clamp(4rem, calc(14vw - 0.2rem), 6.8rem);
+    text-transform: uppercase;
     line-height: 1;
 }
 h3 {
+    font-size: clamp(4rem, calc(14vw - 0.2rem), 6.8rem);
+    line-height: 1;
+    font-weight: var(--fw-regular);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+h4 {
 
-    font-size: calc(2vw + 1.2rem);
+    font-size: var(--fs-base);
     line-height: 1;
     text-transform: uppercase;
-    font-weight: var(--fw-semi-bold);
+    font-weight: var(--fw-extra-bold);
+    margin-top: 0;
 }
 p {
     line-height: 1.5;
-    font-size: calc(2vw + 1.2rem);
+    font-size: var(--fs-base);
     text-indent: 20%;
     font-weight: var(--fw-regular);
 }
@@ -61,8 +80,10 @@ nav {
     background-color: var(--whitish);
     width: 100%;
     bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
 }
-menu {
+menu, ul {
     padding: 0;
     display: flex;
     margin: 0;
@@ -76,8 +97,10 @@ a {
     text-decoration: none;
     color: var(--blackish);
 }
+button {
+    appearance: none;
+}
 /* GLOBAL CLASSES */
-
 .container {
     padding: 5vw 5vw 0 5vw;
 }
@@ -92,17 +115,36 @@ a {
 }   
 
 /* NAVIGATION */
+.namebox {
+    font-size: 2rem;
+    border-top: 0.2rem solid var(--blackish);
+    font-weight: var(--fw-semi-bold);
+    padding: 1rem 2rem;
+}
 .nav-menu {
+    display: flex;
     flex-wrap: nowrap;
     overflow: auto;
 }
 .nav-item {
     border-top: 0.2rem solid var(--blackish);
     border-right: 0.2rem solid var(--blackish);
-    font-size: 2rem;
-    padding: 1rem 5vw;
+    border-bottom: none;
+    border-left: none;
+    background-color: var(--whitish);
+    font-size: 1.6rem;
+    font-weight: var(--fw-semi-bold);
+    flex: 1;
+    text-transform: uppercase;
     text-wrap: nowrap;
-    display: inline-block;
+    text-align: start;
+
+    padding: 1rem 2rem;
+    display: inline-flex;
+    align-items: flex-start;
+}
+#current {
+    flex: 3;
 }
 
 /* HELLO SECTION */
@@ -133,6 +175,27 @@ a {
 
 /* ABOUT SECTION */
 
+/* WORK SECTION */
+
+.case-item {
+    border-bottom: 0.2rem solid var(--blackish);
+    border-left: 0.2rem solid var(--blackish);
+}
+.case-deets {
+    padding: 5vw;
+}
+.case-types {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.case-types li {
+    background-color: bisque;
+    font-size: var(--fs-base);
+    padding: 0.4rem 0.8rem;
+    text-transform: uppercase;
+
+}
+
 /* FOOTER */
 
 .chat {
@@ -160,4 +223,39 @@ a {
 .footer-text {
     text-indent: 0;
     margin: 0;
+}
+
+
+
+
+@media (min-width: 900px) {
+
+    nav {
+        height: 100%;
+        width: 13rem;
+        top: 0;
+        flex-direction: column;
+    }
+
+    /* NAVIGATION */
+
+    .namebox {
+        font-size: 3rem;
+        border-top: none;
+        font-weight: var(--fw-semi-bold);
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        overflow: auto;
+        height: 100%;
+    }
+    .nav-item {
+        text-wrap: wrap;
+    }
+
+
 }
