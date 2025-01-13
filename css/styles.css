@@ -26,11 +26,13 @@
     --primary-blackish: #0F0F0F;
     --primary-whitish: #FAFAFA;
     --primary-blue: #85D3FF;
+    --primary-gray: #EBEBEB;
     --room-shui-peach: #F7D1BA;
     --room-shui-green: #557571;
 
     --padding-full: 5vw;
-    --padding-outer: clamp(1.6rem, calc(4vw + 0.4rem), 2rem)
+    --padding-outer: clamp(1.6rem, calc(4vw + 0.4rem), 2rem);
+    --padding-box: 4vw;
 
 }
 html {
@@ -107,31 +109,48 @@ button {
 img {
     width: 100%;
 }
+section {
+    margin-bottom: clamp(8.4rem, calc(30vw - 0.5rem), 17.5rem);
+}
 /* GLOBAL CLASSES */
-.container {
+
+/*.container {
     padding-top: var(--padding-outer);
     padding-right: var(--padding-outer);
     padding-left: var(--padding-outer);
     padding-bottom: 0;
+}*/
+.box {
+    padding: var(--padding-box);
+}
+.box-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: var(--padding-box);
+    gap: var(--padding-box);
+
 }
 .image-box {
     padding: 5%;
 }
 .section-title {
-    padding-top: clamp(8.4rem, calc(30vw - 0.5rem), 17.5rem);
+    padding-top: /*clamp(8.4rem, calc(30vw - 0.5rem), 17.5rem)*/;
     padding-right: var(--padding-outer);
     padding-left: var(--padding-outer);
     padding-bottom: 0;
+    box-shadow: inset 0 calc(clamp(1.7rem, calc(6vw - 0.1rem), 3.5rem) * -1) var(--primary-gray);
+
 }   
 .section-number {
     font-size: var(--fs-base);
 }
+/*
 .title-line-primary {
     box-shadow: inset 0 calc(clamp(1.7rem, calc(6vw - 0.1rem), 3.5rem) * -1) var(--primary-blue);
 }
 .title-line-rs {
     box-shadow: inset 0 calc(clamp(1.7rem, calc(6vw - 0.1rem), 3.5rem) * -1) var(--room-shui-peach);
-}
+}*/
 .list {
     display: flex;
     flex-direction: column;
@@ -144,7 +163,9 @@ img {
     border-left: 0.2rem solid var(--primary-blackish);
 }
 /* COLORS */
-
+.bg-primary-gray{
+    background-color: var(--primary-gray);
+}
 .room-green {
     background-color: var(--room-shui-green);
 }
@@ -281,6 +302,14 @@ img {
         padding: 2rem;
     }
 
+    .box-grid {
+        grid-template-columns: repeat(12, 1fr);
+    
+    }
+    .grid-6 {
+        grid-column: span 6;
+
+    }
     /* NAVIGATION */
 
     .namebox {
@@ -302,5 +331,5 @@ img {
         padding: 2rem;
     }
 
-
+    
 }
