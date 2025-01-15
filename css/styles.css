@@ -22,6 +22,9 @@
     --fw-extra-bold: 800;
 
     --fs-base: clamp(1.6rem, 1vw + 1.3rem, 2rem);
+    --fs-section-head: clamp(3.4rem, calc(12vw - 0.2rem), 7rem);
+    --fs-case-list: clamp(2.5rem, calc(9vw - 0.15rem), 5.3rem);
+
     /* COLORS */
     --primary-blackish: #0F0F0F;
     --primary-whitish: #FAFAFA;
@@ -30,9 +33,9 @@
     --room-shui-peach: #F7D1BA;
     --room-shui-green: #557571;
 
-    --padding-full: 5vw;
-    --padding-outer: clamp(1.6rem, calc(4vw + 0.4rem), 2rem);
-    --padding-box: 4vw;
+    /* --padding-full: 5vw;
+   --padding-outer: clamp(1.6rem, calc(4vw + 0.4rem), 2rem);*/
+    --padding-box: clamp(2rem, 4vw, 4vw);
 
 }
 html {
@@ -51,24 +54,28 @@ footer {
     flex-direction: column;
     border-top: 0.2rem solid var(--primary-blackish);
 }
+h1, h4, h5 {
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+}
 h2 {
-    margin: 1rem 0 0 0;
     font-weight: var(--fw-semi-bold);
-    font-size: clamp(3.4rem, calc(12vw - 0.2rem), 7rem);
+    font-size: var(--fs-section-head);
     text-transform: uppercase;
     line-height: 1;
+    margin: 0;
 }
 h3 {
-    font-size: clamp(4rem, calc(14vw - 0.2rem), 6.8rem);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semi-bold);
     line-height: 1;
-    font-weight: var(--fw-regular);
-    margin-top: 0;
-    margin-bottom: 1rem;
+    text-transform: uppercase;
+    margin: 0;
 }
 h4 {
 
     font-size: var(--fs-base);
-    line-height: 1;
     text-transform: uppercase;
     font-weight: var(--fw-extra-bold);
     margin-top: 0;
@@ -79,6 +86,7 @@ p {
     text-indent: 20%;
     font-weight: var(--fw-regular);
     max-width: 60rem;
+    margin-top: 0;
 }
 nav {
     z-index: 100;
@@ -122,12 +130,22 @@ section {
 }*/
 .box {
     padding: var(--padding-box);
+    margin-bottom: 2rem;
 }
 .box-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     padding: var(--padding-box);
     gap: var(--padding-box);
+    margin-bottom: 2rem;
+}
+.box-heading {
+    padding: 0.5rem 1rem 0.25rem 1rem;
+    background-color: var(--primary-blackish);
+    color: white;
+    display: flex;
+    margin-left: auto;
+    width: fit-content;
 
 }
 .image-box {
@@ -135,10 +153,9 @@ section {
 }
 .section-title {
     padding-top: /*clamp(8.4rem, calc(30vw - 0.5rem), 17.5rem)*/;
-    padding-right: var(--padding-outer);
-    padding-left: var(--padding-outer);
+    padding-right: var(--padding-box);
+    padding-left: var(--padding-box);
     padding-bottom: 0;
-    box-shadow: inset 0 calc(clamp(1.7rem, calc(6vw - 0.1rem), 3.5rem) * -1) var(--primary-gray);
 
 }   
 .section-number {
@@ -154,16 +171,20 @@ section {
 .list {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 .list li {
-    padding: 0.5rem 2rem 1rem 2rem;
+    padding: 0 1.5rem 0 1.5rem;
     font-size: var(--fs-base);
-    line-height: 1;
+    line-height: 1.5;
     border-bottom: 0.2rem solid var(--primary-blackish);
     border-left: 0.2rem solid var(--primary-blackish);
 }
 /* COLORS */
-.bg-primary-gray{
+.bs-primary-gray {
+    box-shadow: inset 0 calc(clamp(1.7rem, calc(6vw - 0.1rem), 3.5rem) * -1) var(--primary-gray);
+}
+.bg-primary-gray {
     background-color: var(--primary-gray);
 }
 .room-green {
@@ -238,9 +259,17 @@ section {
 .case-item {
     border-bottom: 0.2rem solid var(--primary-blackish);
     border-left: 0.2rem solid var(--primary-blackish);
+    margin-bottom: 1rem;
 }
 .case-deets {
-    padding: 5vw;
+    padding: 2vw;
+}
+.case-deets h5 {
+    font-size: var(--fs-case-list);
+    font-weight: var(--fw-regular);
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 .case-types {
     flex-wrap: wrap;
@@ -252,6 +281,17 @@ section {
     padding: 0.4rem 0.8rem;
     text-transform: uppercase;
 
+}
+/* USER PERSONA */
+.persona-frame {
+    filter: drop-shadow(-0.5rem 0.5rem 0.75rem);
+    background-color: white;
+}
+.persona-img {
+    padding: 2rem;
+}
+.persona-name {
+    padding: 0 2rem 2rem 2rem;
 }
 
 /* FOOTER */
@@ -306,9 +346,18 @@ section {
         grid-template-columns: repeat(12, 1fr);
     
     }
-    .grid-6 {
+    .grid-s6 {
         grid-column: span 6;
 
+    }
+    .grid-s3 {
+        grid-column: span 3;
+    }
+    .grid-5s7 {
+        grid-column: 5 / span 7;
+    }
+    .grid-s12 {
+        grid-column: span 12;
     }
     /* NAVIGATION */
 
