@@ -1,5 +1,45 @@
+/* BUTTON SCROLLS TO SPECIFIC SECTION */
+
+function menuButtonZero() {
+    const section = document.getElementById("section-zero");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonOne() {
+    const section = document.getElementById("section-one");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonTwo() {
+    const section = document.getElementById("section-two");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonThree() {
+    const section = document.getElementById("section-three");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonFour() {
+    const section = document.getElementById("section-four");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonFive() {
+    const section = document.getElementById("section-five");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonSix() {
+    const section = document.getElementById("section-six");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonSeven() {
+    const section = document.getElementById("section-seven");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+function menuButtonEight() {
+    const section = document.getElementById("section-eight");
+    section.scrollIntoView({ behavior: 'smooth'});
+}
+
+
 /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+toggle between hiding and showing the dropdown content 
 function menuButton() {
 
     const currentText = document.querySelector("#menu-button");
@@ -13,7 +53,7 @@ function menuButton() {
         currentText.textContent = initialText;
         menuHeight.style.height = "0";
     };
-}
+}*/
 
 document.querySelector("#menu-button").addEventListener("click", menuButton);
 

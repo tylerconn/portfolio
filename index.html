@@ -33,57 +33,55 @@
     <body>
         <header>
             <nav>
-                <div class="namebox">
-                    <span>Tyler Conn</span>
+                <div class="box-name">
+                    <a class="name" href="../index.html">Tyler Conn</a>
                 </div>
                 <div class="nav-menu">
-                    <button class="nav-item">Hello</button>
-                    <button class="nav-item" id="current">About me</button>
-                    <button class="nav-item">Work</button>
-                    <button class="nav-item">Contact</button>
+                    <button class="nav-item" onClick="menuButtonZero()">Hello</button>
+                    <button class="nav-item" onClick="menuButtonOne()" id="current">About me</button>
+                    <button class="nav-item" onClick="menuButtonTwo()">Work</button>
+                    <button class="nav-item" onClick="menuButtonThree()">Contact</button>
                 </div>
             </nav>
         </header>
         <main>
-            <section class="hello"> <!--HELLO SECTION-->
-                <div class="container">
-                    <div>
-                        <span class="greeting">Nice to meet you</span>
+            <section id="section-zero"> <!--HELLO SECTION-->
+                <div class="section-hello">
+                    <div class="box box-hello bg-blue">
+                        <div>
+                            <p class="greeting">Nice to meet you</p>
+                        </div>
+                        <div>
+                            <p class="text intro">I'm Tyler, a Product Designer currently based in Chicago, and I design experiences for humans, that are both easily understood and enjoyed.</p>
+                        </div>
                     </div>
-                    <div></div>
                     <div>
-                        <p class="intro">I'm Tyler, a Product Designer currently based in Chicago, and I design experiences for humans, that are both easily understood and enjoyed.</p>
+                        <span class="scroll">&#x2193;&#x2193;&#x2193; Scroll &#x2193;&#x2193;&#x2193;</span>
                     </div>
-                </div>
-                <div class="scroll">
-                    <span>Scroll</span>
-                    <span>Scroll</span>
-                    <span>Scroll</span>
                 </div>
             </section>
-            <section> <!--ABOUT SECTION-->
-                <div class="section-title bs-primary-gray">
-                    <h2>About me</h2>
+            <section id="section-one"> <!--ABOUT SECTION-->
+                <div class="section-start bs-gray">
+                    <h2 class="heading-section">About me</h2>
                 </div>
-                <div class="box-grid bg-primary-gray">
-                    <div class="grid-6">
+                <div class="box bg-gray">
+                    <div>
 <!--INSERT PORTRAIT-->
                     </div>
-                    <div class="grid-6">
-                        <h4>My Background</h4>
-                        <p>Although my creative career began in the late 90s in my grandmother's art studio, it took a slight detour after I studied accounting and Spanish in college, when I went to work as an auditor for EY and, later, an accounting manager for Equifax.</p>
-                        <p>While these jobs mostly satisfied my curiosity itch, they did nothing for my need to be creative, so I decided to change my career path and enroll in a 6-month intensive UX/UI Design bootcamp at Georgia Tech, which has been a fantastic decision.</p>
-                        <p>I currently work for CGI in their human-centered design and Strategic consulting team and work with clients to create innovative solutions with their users in mind.</p>
-                        <p>When I'm not working, you can find me throwing pots in a ceramic studio or out in the wild taking pictures and/or eating food.</p>
+                    <div>
+                        <h4 class="heading-text">My Background</h4>
+                        <p class="text">Although my creative career began in the late 90s in my grandmother's art studio, it took a slight detour after I studied accounting and Spanish in college, when I went to work as an auditor for EY and, later, an accounting manager for Equifax.</p>
+                        <p class="text">While these jobs mostly satisfied my curiosity itch, they did nothing for my need to be creative, so I decided to change my career path and enroll in a 6-month intensive UX/UI Design bootcamp at Georgia Tech, which has been a fantastic decision.</p>
+                        <p class="text">I currently work for CGI in their human-centered design and Strategic consulting team and work with clients to create innovative solutions with their users in mind.</p>
+                        <p class="text">When I'm not working, you can find me throwing pots in a ceramic studio or out in the wild taking pictures and/or eating food.</p>
                     </div>
-                    
                 </div>
             </section>
-            <section> <!--WORK SECTION-->
-                <div class="section-title bs-primary-gray">
-                    <h2>Work</h2>
+            <section id="section-two"> <!--WORK SECTION-->
+                <div class="section-start bs-gray">
+                    <h2 class="heading-section">Work</h2>
                 </div>
-                <div class="case-list box bg-primary-gray">
+                <div class="case-list box bg-gray">
                     <div class="case-item">
                         <a href="cases/room-shui.html">
                             <div class="case-deets">
@@ -121,54 +119,22 @@
             </section>
         </main>
         <footer>
-            <div class="chat">
-                <span>Let's chat</span>
-            </div>
-            <div>
-                <menu class="footer-menu">
-                    <li><a class="footer-link" href="mailto:tyler@tylerconn.me">Email me! &#x2197;</a></li>
-                    <li><a class="footer-link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram &#x2197;</a></li>
-                    <li><a class="footer-link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn &#x2197;</a></li>
+            <div class="box">
+                <div>
+                    <p class="chat">Let's Chat</p>
+                </div>
+                <menu class="list-links">
+                    <li><a class="link" href="mailto:tyler@tylerconn.me">Email me! &#x2197;</a></li>
+                    <li><a class="link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram &#x2197;</a></li>
+                    <li><a class="link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn &#x2197;</a></li>
                 </menu>
                 <div>
-                    <p class="footer-text">Made with love in Chicago</p>
-                    <p class="footer-text">Designed and developed by Tyler Conn</p>
-                    <p class="footer-text">&copy; 2025</p>
+                    <p class="text-footer">Made with love in Chicago</p>
+                    <p class="text-footer">Designed and developed by Tyler Conn</p>
+                    <p class="text-footer">&copy; 2025</p>
                 </div>
             </div>
         </footer>
-        <!--<div class="preloader-screen">
-            <img class="preloader" src="images/preloader.svg">
-        </div>
         <script src="js/script.js" type="text/javascript"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>-->
     </body>
 </html>
-
-<!--
-        
-            <button type="button" class="btn btn-light text-dark gototop" data-bs-toggle="tooltip" data-bs-placement="left" title="Go To Top">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-bar-up" viewbox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z"/>
-                </svg>
-            </button>
-            <div class="arrow animated bounce"></div>
-            <div id="scrollDown" class="text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-mouse mb-1" viewBox="0 0 16 16">
-                    <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"/>
-                </svg>
-                <p class="fs-6 mb-0">SCROLL</p>
-            </div>
-        </header>
-
-         hero
-        <main>
-            
-
-
-
-        
-        
-        
-    </body>
-</html> -->
