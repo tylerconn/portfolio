@@ -30,22 +30,22 @@
             gtag('config', 'G-1DKN28HL28');
         </script>
     </head>
-    <body>
+    <body id="section-zero">
         <header>
             <nav>
                 <div class="box-name">
                     <a class="name" href="../index.html">Tyler Conn</a>
                 </div>
                 <div class="nav-menu">
-                    <button class="nav-item" onClick="menuButtonZero()">Hello</button>
-                    <button class="nav-item" onClick="menuButtonOne()" id="current">About me</button>
-                    <button class="nav-item" onClick="menuButtonTwo()">Work</button>
-                    <button class="nav-item" onClick="menuButtonThree()">Contact</button>
+                    <button class="nav-button current" id="nav-zero" onClick="menuButtonZero()">Hello</button>
+                    <button class="nav-button" id="nav-one" onClick="menuButtonOne()">About me</button>
+                    <button class="nav-button" id="nav-two" onClick="menuButtonTwo()">Work</button>
+                    <button class="nav-button" id="nav-three" onClick="menuButtonThree()">Contact</button>
                 </div>
             </nav>
         </header>
         <main>
-            <section id="section-zero"> <!--HELLO SECTION-->
+            <section> <!--HELLO SECTION-->
                 <div class="section-hello">
                     <div class="box box-hello bg-blue">
                         <div>
@@ -81,57 +81,76 @@
                 <div class="section-start bs-gray">
                     <h2 class="heading-section">Work</h2>
                 </div>
-                <div class="case-list box bg-gray">
-                    <div class="case-item">
-                        <a href="cases/room-shui.html">
-                            <div class="case-deets">
-                                <h5>Room Shui</h5>
-                                <ul class="case-types">
-                                    <li>Concept</li>
-                                    <li>Web Design</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="case-item">
-                        <a href="cases/our-house.html">
-                            <div class="case-deets">
-                                <h5>Our House</h5>
-                                <ul class="case-types">
-                                    <li>Concept</li>
-                                    <li>Web Design</li>
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="case-item">
-                        <a href="cases/energy-dept.html">
-                            <div class="case-deets">
-                                <h5>Dept. of Energy</h5>
-                                <ul class="case-types">
-                                    <li>Concept</li>
-                                    <li>Web Design</li>
-                                </ul>
-                            </div>
-                        </a>
+                <div class="box bg-gray">
+                    <div class="list-cases">
+                        <div>
+                            <a href="cases/room-shui.html">
+                                <div class="case-item">
+                                    <div class="case-facts">
+                                        <h5 class="title-list">Room Shui</h5>
+                                        <ul class="list-row">
+                                            <li class="label bg-rs-peach">Concept</li>
+                                            <li class="label bg-rs-peach">Web Design</li>
+                                        </ul>
+                                    </div>
+                                    <div class="case-preview bg-rs-green">
+                                        <img class="preview-img" src="images/cs-room-shui/room-shui-main.png" />
+                                    </div>    
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="cases/our-house.html">
+                                <div class="case-item">
+                                    <div class="case-facts">
+                                        <h5 class="title-list">Our House</h5>
+                                        <ul class="list-row">
+                                            <li class="label">Concept</li>
+                                            <li class="label">Web Design</li>
+                                        </ul>
+                                    </div>
+                                    <div class="case-preview bg-blackish">
+
+                                    </div>  
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="cases/energy-dept.html">
+                                <div class="case-item">
+                                    <div class="case-facts">
+                                        <h5 class="title-list">Dept. of Energy</h5>
+                                        <ul class="list-row">
+                                            <li class="label bg-de-navy">Concept</li>
+                                            <li class="label bg-de-navy">Web Design</li>
+                                        </ul>
+                                    </div>
+                                    <div class="case-preview bg-de-green">
+                                        <img class="preview-img" src="images/cs-energy/energy-main.png" />
+                                    </div>    
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer id="section-three">
             <div class="box">
                 <div>
                     <p class="chat">Let's Chat</p>
                 </div>
-                <menu class="list-links">
-                    <li><a class="link" href="mailto:tyler@tylerconn.me">Email me! &#x2197;</a></li>
-                    <li><a class="link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram &#x2197;</a></li>
-                    <li><a class="link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn &#x2197;</a></li>
-                </menu>
-                <div>
-                    <p class="text-footer">Made with love in Chicago</p>
-                    <p class="text-footer">Designed and developed by Tyler Conn</p>
-                    <p class="text-footer">&copy; 2025</p>
+                <div class="box-footer">
+                    <menu class="list-row">
+                        <li><a class="link" href="mailto:tyler@tylerconn.me">Email me! &#x2197;</a></li>
+                        <li><a class="link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram &#x2197;</a></li>
+                        <li><a class="link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn &#x2197;</a></li>
+                    </menu>
+                    <div>
+                        <p class="text-footer">Made with love in Chicago</p>
+                        <p class="text-footer">Designed and developed by Tyler Conn</p>
+                        <p class="text-footer">&copy; 2025</p>
+                    </div>    
                 </div>
             </div>
         </footer>

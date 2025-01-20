@@ -30,21 +30,22 @@
             gtag('config', 'G-1DKN28HL28');
         </script>
     </head>
-    <body>
+    <body id="section-zero">
         <header>
             <nav>
                 <div class="box-name">
                     <a class="name" href="../index.html">Tyler Conn</a>
                 </div>
                 <div class="nav-menu">
-                    <button class="nav-item" onClick="menuButtonOne()">Overview</button>
-                    <button class="nav-item" onClick="menuButtonTwo()" id="current">The Challenge</button>
-                    <button class="nav-item" onClick="menuButtonThree()">User Research</button>
-                    <button class="nav-item" onClick="menuButtonFour()">Concept Development</button>
-                    <button class="nav-item" onClick="menuButtonFive()">Iterative Design</button>
-                    <button class="nav-item" onClick="menuButtonSix()">Results & Impact</button>
-                    <button class="nav-item" onClick="menuButtonSeven()">Lessions Learned</button>
-                    <button class="nav-item" onClick="menuButtonEight()">Conclusion</button>
+                    <button class="nav-button current" id="nav-zero" onClick="menuButtonZero()">Room Shui</button>
+                    <button class="nav-button" id="nav-one" onClick="menuButtonOne()">Overview</button>
+                    <button class="nav-button" id="nav-two" onClick="menuButtonTwo()">The Challenge</button>
+                    <button class="nav-button" id="nav-three" onClick="menuButtonThree()">User Research</button>
+                    <button class="nav-button" id="nav-four" onClick="menuButtonFour()">Concept Development</button>
+                    <button class="nav-button" id="nav-five" onClick="menuButtonFive()">Iterative Design</button>
+                    <button class="nav-button" id="nav-six" onClick="menuButtonSix()">Results & Impact</button>
+                    <button class="nav-button" id="nav-seven" onClick="menuButtonSeven()">Lessions Learned</button>
+                    <button class="nav-button" id="nav-eight" onClick="menuButtonEight()">Conclusion</button>
                 </div>
             </nav>
         </header>
@@ -54,7 +55,7 @@
                     <div>
                         <h1 class="title">Room Shui</h1>
                     </div>
-                    <ul class="list-labels">
+                    <ul class="list-flip">
                         <li class="label bg-rs-peach">Concept</li>
                         <li class="label bg-rs-peach">Web Design</li>
                     </ul>
@@ -76,7 +77,7 @@
                             <div class="box-column">
                                 <div>
                                     <h4 class="heading-text">Tools</h4>
-                                    <ul class="list-regular">
+                                    <ul class="list-text">
                                         <li class="list-item">Figma</li>
                                         <li class="list-item">Miro</li>
                                         <li class="list-item">Whimsical</li>
@@ -88,7 +89,7 @@
                             <div class="box-column">
                                 <div>
                                     <h4 class="heading-text">Contributors</h4>
-                                    <ul class="list-regular">
+                                    <ul class="list-text">
                                         <li class="list-item">Marissa Patterson</li>
                                         <li class="list-item">Leslie Wong</li>
                                         <li class="list-item">Lynn Faiola</li>
@@ -131,7 +132,7 @@
                         <div class="box-column">
                             <div class="user-frame">
                                 <div class="user-img">
-                                    <img id="" src="../images/cs-room-shui/user-edward.jpg" alt="">
+                                    <img src="../images/cs-room-shui/user-edward.jpg" alt="">
                                 </div>
                                 <div class="user-name">
                                     <span>Edward Wu</span>
@@ -150,7 +151,7 @@
                             </div>
                             <div>
                                 <h4 class="heading-text">Goals</h4>
-                                <ul class="list-regular">
+                                <ul class="list-text">
                                     <li class="list-item">Needs help quickly staging the homes he's selling</li>
                                     <li class="list-item">Easily visualize how a new piece of furniture would fit in a room</li>
                                     <li class="list-item">Wants to have the staging of the homes help sell the homes with optimal arrangement</li>
@@ -158,7 +159,7 @@
                             </div>   
                             <div>
                                 <h4 class="heading-text">Pains</h4>
-                                <ul class="list-regular">
+                                <ul class="list-text">
                                     <li class="list-item">Hard to stage multiple houses for sale in a short time period</li>
                                     <li class="list-item">Takes time to plan staging for selling homes</li>
                                     <li class="list-item">Doesn't have all dimensions readily available for planning</li>
@@ -233,11 +234,11 @@
                             <figcaption>Home</figcaption>
                         </figure>
                         <figure>
-                            <img class="border shadow" src="../images/cs-room-shui/sketch_design.jpg" alt="">
+                            <img src="../images/cs-room-shui/sketch_design.jpg" alt="">
                             <figcaption>Design</figcaption>
                         </figure>
                         <figure>
-                            <img class="border shadow" src="../images/cs-room-shui/sketch_styles.jpg" alt="">
+                            <img src="../images/cs-room-shui/sketch_styles.jpg" alt="">
                             <figcaption>Styles</figcaption>
                         </figure>
                     </div>
@@ -320,7 +321,7 @@
                         <div>
                             <p class="text">The final design solution was a high-fidelity prototype and website that enabled users to easily visualize and design their spaces virtually. Positive feedback received during usability testing validated our design decisions, indicating that Room Shui effectively addressed users' needs and preferences.</p>
                         </div>
-                        <menu class="list-links">
+                        <menu class="list-row">
                             <li><a class="link" href="https://hlbigham.github.io/RoomShui/">View prototype &#x2197;</a></li>
                             <li><a class="link" href="https://github.com/hlbigham/RoomShui">View GitHub repository &#x2197;</a></li>
                         </menu>
@@ -330,8 +331,8 @@
                     <div class="box-header">
                         <h3 class="label bg-blackish">Final Prototype</h3>
                     </div>
-                    <figure class="grid-full-width figure-single">
-                        <img class="border shadow" src="../images/cs-room-shui/room_shui_gif.gif" alt="">
+                    <figure>
+                        <img src="../images/cs-room-shui/room_shui_gif.gif" alt="">
                     </figure>    
                 </div>
             </section>
@@ -361,15 +362,17 @@
                 <div>
                     <p class="chat">Let's Chat</p>
                 </div>
-                <menu class="list-links">
-                    <li><a class="link" href="mailto:tyler@tylerconn.me">Email me! &#x2197;</a></li>
-                    <li><a class="link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram &#x2197;</a></li>
-                    <li><a class="link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn &#x2197;</a></li>
-                </menu>
-                <div>
-                    <p class="text-footer">Made with love in Chicago</p>
-                    <p class="text-footer">Designed and developed by Tyler Conn</p>
-                    <p class="text-footer">&copy; 2025</p>
+                <div class="box-footer">
+                    <menu class="list-row">
+                        <li><a class="link" href="mailto:tyler@tylerconn.me">Email me! &#x2197;</a></li>
+                        <li><a class="link" href="https://www.instagram.com/tyler.conn/" target="_blank" ref="noreferrer noopener">Instagram &#x2197;</a></li>
+                        <li><a class="link" href="https://www.linkedin.com/in/tylerconn" target="_blank" ref="noreferrer noopener">LinkedIn &#x2197;</a></li>
+                    </menu>
+                    <div>
+                        <p class="text-footer">Made with love in Chicago</p>
+                        <p class="text-footer">Designed and developed by Tyler Conn</p>
+                        <p class="text-footer">&copy; 2025</p>
+                    </div>    
                 </div>
             </div>
         </footer>
