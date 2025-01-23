@@ -43,6 +43,7 @@
     --primary-whitish: #FAFAFA;
     --primary-blue: #85D3FF;
     --primary-gray: #EBEBEB;
+    --primary-red: #FF0000;
     --room-shui-peach: #F7D1BA;
     --room-shui-green: #557571;
     --energy-green: #01804E;
@@ -79,7 +80,7 @@ body, nav, main, footer, figure, section, div, ul, menu {
 ul, menu {
     list-style-type: none;
 }
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, button {
     line-height: 1;
 }
 body {
@@ -332,7 +333,7 @@ a {
 
 .box-name {
 
-    padding: 1rem 2rem;
+    padding: var(--spacing-gutter);
 }
 .nav-menu {
     display: flex;
@@ -363,7 +364,6 @@ a {
     text-wrap: nowrap;
     /*border: 0.2rem solid var(--primary-blackish);*/
     padding: var(--spacing-mini);
-    height: 4.4rem;
     background-color: var(--primary-gray);
 }
 .nav-button:hover {
@@ -514,6 +514,8 @@ a {
     text-transform: uppercase;
 }
 
+
+
 .current {
     flex: 3;
     border: 0.2rem solid var(--primary-blackish);
@@ -529,7 +531,9 @@ a {
 
         --fs-chat: calc( 15.6vw - 3.7rem );
     }
-
+    html {
+        cursor: none;
+    }
     nav {
         height: 100%;
         width: 15rem;
@@ -542,6 +546,9 @@ a {
     body {
         margin: 0 0 0 17rem;
         padding: 2rem;
+    }
+    a:hover {
+        cursor: none;
     }
     .box-title-section {
         flex-direction: row;
@@ -594,11 +601,8 @@ a {
         text-wrap: wrap;
         height: 6rem;
     }
-    .case-item {
-        flex-direction: row;
-        align-items: end;
-        height: calc( var(--fs-case-list) + 11.8rem );
-
+    .nav-button:hover{
+        cursor: none;
     }
     .case-preview {
         width: 50%;
@@ -610,7 +614,7 @@ a {
 
         object-fit: contain;
     }
-
+ 
     .case-item:hover > .case-preview {
         height: calc( (90vw - 21rem) / 3 );
         overflow-y: visible;
@@ -623,7 +627,61 @@ a {
         justify-content: space-between;
 
     }
-    
+    .case-item {
+        flex-direction: row;
+        align-items: end;
+        height: calc( var(--fs-case-list) + 11.8rem );
+
+    }
+    .cursor {
+        position: fixed;
+        transform: translate(-50%, -50%);
+        top: 0;
+        left: 0;
+        height: 1.4rem;
+        width: 1.4rem;
+        background-color: red;
+        border-radius: 50%;
+        z-index: 1000;
+        pointer-events: none;
+        transition-property: height, width;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
+    }
+    .cursor-eyes {
+        height: 4rem;
+        width: 4rem;
+        background-image: url(../images/cursors/eyes.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 3rem 2.4rem;
+    }
+    .cursor-jump {
+        height: 4rem;
+        width: 4rem;
+        background-image: url(../images/cursors/jump.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 3rem 1.4rem;
+    }
+    .cursor-plane {
+        height: 4rem;
+        width: 4rem;
+        background-image: url(../images/cursors/plane.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2.7rem 1.9rem;
+    }
+    .cursor-face {
+        height: 4rem;
+        width: 4rem;
+        background-image: url(../images/cursors/face.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 2.7rem 2.7rem;
+    }
+
+
 }
 
 @keyframes wave {

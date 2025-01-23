@@ -189,23 +189,73 @@ function navCurrent() {
             navEight.classList.remove("current");
         }
     }
-
-
-
-    
-
-
-
-
 }
   
-window.addEventListener('scroll', navCurrent);
+window.addEventListener("scroll", navCurrent);
 
 
 
 
 
+// BASIC MOUSE CURSOR
 
+const cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", e => {
+    cursor.setAttribute("style", "top: "+(e.pageY - scrollY)+"px; left: "+(e.pageX)+"px;");
+});
+
+// CASE STUDY CARDS CURSOR
+
+const caseItems = document.getElementsByClassName("case-item");
+
+for (let i = 0; i < caseItems.length; i++) {
+    caseItems[i].addEventListener("mouseover", () => {
+        cursor.classList.add("cursor-eyes");
+    });
+    caseItems[i].addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-eyes");
+    });
+}
+
+// NAVIGATION CURSOR
+
+const navButtons = document.getElementsByClassName("nav-button");
+
+for (let i = 0; i < navButtons.length; i++) {
+    navButtons[i].addEventListener("mouseover", () => {
+        cursor.classList.add("cursor-jump");
+    });
+    navButtons[i].addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-jump");
+    });
+}
+
+// LINKS CURSOR
+
+const links = document.getElementsByClassName("link");
+
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("mouseover", () => {
+        cursor.classList.add("cursor-plane");
+    });
+    links[i].addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-plane");
+    });
+}
+
+// NAME CURSOR
+
+const nameBox = document.getElementsByClassName("box-name");
+
+for (let i = 0; i < nameBox.length; i++) {
+    nameBox[i].addEventListener("mouseover", () => {
+        cursor.classList.add("cursor-face");
+    });
+    nameBox[i].addEventListener("mouseout", () => {
+        cursor.classList.remove("cursor-face");
+    });
+}
 
 
 
