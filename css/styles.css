@@ -30,12 +30,11 @@
     --fw-extra-bold: 800;
     
     /* FONT SIZES */
-    --fs-: clamp(4.6rem, calc(16vw - 0.5rem), 9.4rem);
+    --fs-hello: clamp(4.6rem, calc(16vw - 0.5rem), 9.4rem);
     --fs-chat: 15.6vw;
     --fs-title: clamp(4.2rem, calc(15vw - 0.25rem), 8.7rem);
     --fs-section-head: clamp(3.4rem, calc(12vw - 0.2rem), 7rem);
     --fs-case-list: clamp(2.5rem, calc(9vw - 0.15rem), 5.3rem);
-    --fs-quote: clamp(1.7rem, calc(6vw - 0.1rem), 3.5rem);
     --fs-base: clamp(1.6rem, calc(1vw + 1.3rem), 2rem);
 
     /* COLORS */
@@ -344,27 +343,17 @@ a {
     margin-top: var(--spacing-mini);
     padding: 0 var(--spacing-mini);
 }
-.nav-item {
-    border-top: 0.1rem solid var(--primary-blackish);
-    border-right: 0.1rem solid var(--primary-blackish);
-    font-size: 1.6rem;
-    font-weight: var(--fw-semi-bold);
-    flex: 1;
-    text-transform: uppercase;
-    text-wrap: nowrap;
-    line-height: 1;
-    padding: 1rem 2rem;
-    display: inline-flex;
-    align-items: flex-start;
-}
+
 .nav-button {
+    display: flex;
     font-size: 1.6rem;
     font-weight: var(--fw-semi-bold);
     text-transform: uppercase;
     text-wrap: nowrap;
-    /*border: 0.2rem solid var(--primary-blackish);*/
+    border: 0.2rem solid var(--primary-gray);
     padding: var(--spacing-mini);
     background-color: var(--primary-gray);
+    transition: all 200ms ease-in-out;
 }
 .nav-button:hover {
     font-style: italic;
@@ -447,7 +436,7 @@ a {
     border: 0.1rem solid var(--primary-blackish);
     background-color: white;
     max-width: 40rem;
-    margin: 0 auto 0 auto;
+    margin: 0 auto var(--spacing-gutter) auto;
     height: fit-content;
 
 }
@@ -467,8 +456,10 @@ a {
 .user-quote {
     text-align: center;
     line-height: 1.5;
-    font-size: var(--fs-quote);
+    font-size: var(--fs-base);
     font-weight: var(--fw-regular);
+    max-width: 40rem;
+    margin: 0 auto;
 }
 /* FOOTER */
 
@@ -505,7 +496,7 @@ a {
 }
 
 .fig-captioned {
-    gap: var(--spacing-gutter);
+    gap: var(--spacing-mini);
 
 }
 .text-caption {
@@ -579,7 +570,7 @@ a {
 
     .box-name {
         border-top: none;
-        padding: 3rem 2rem;
+        padding: 4rem 2rem;
     }
     .name {
         font-size: 4rem;
@@ -638,8 +629,8 @@ a {
         transform: translate(-50%, -50%);
         top: 0;
         left: 0;
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 1.6rem;
+        width: 1.6rem;
         background-color: red;
         border-radius: 50%;
         z-index: 1000;
