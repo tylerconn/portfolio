@@ -9,9 +9,7 @@ for (let i = 0; i < buttonArray.length; i++) {
     });
 }
 
-
-
-// UPDATES THE STYLE OF ACTIVE NAVIGATION BUTTON
+// UPDATES THE STYLE OF ACTIVE NAV BUTTON
 
 window.addEventListener("scroll", () => {
     const trigger = window.innerHeight * 0.5;
@@ -114,21 +112,7 @@ for (let i = 0; i < nameBox.length; i++) {
 
 
 
-/* Trying to update nav when scrolling */
 
-/*function toggleClassOnScroll() {
-    const targetDiv = document.querySelector('.target-div');
-    const scrollPosition = window.scrollY; 
-    const divTop = targetDiv.getBoundingClientRect().top;
-  
-    if (divTop < window.innerHeight / 2) {
-      targetDiv.classList.add('active');
-    } else {
-      targetDiv.classList.remove('active');
-    }
-  }
-  
-  window.addEventListener('scroll', toggleClassOnScroll);*/
 
 
 /* When the user clicks on the button, 
