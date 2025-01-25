@@ -41,157 +41,48 @@ function menuButtonEight() {
     sectionEight.scrollIntoView({ behavior: 'smooth'});
 }
 
-const navZero = document.getElementById("nav-zero");
-const navOne = document.getElementById("nav-one");
-const navTwo = document.getElementById("nav-two");
-const navThree = document.getElementById("nav-three");
-const navFour = document.getElementById("nav-four");
-const navFive = document.getElementById("nav-five");
-const navSix = document.getElementById("nav-six");
-const navSeven = document.getElementById("nav-seven");
-const navEight = document.getElementById("nav-eight");
 
 
 
-function navCurrent() {
-    const trigger = window.innerHeight * 0.6;
-    const defaultPosition = window.innerHeight;
-    let sectionZeroPosition;
-    let sectionOnePosition;
-    let sectionTwoPosition;
-    let sectionThreePosition;
-    let sectionFourPosition;
-    let sectionFivePosition;
-    let sectionSixPosition;
-    let sectionSevenPosition;
-    let sectionEightPosition;
+
+// UPDATES THE STYLE OF ACTIVE NAVIGATION BUTTON
+
+window.addEventListener("scroll", () => {
+    const trigger = window.innerHeight * 0.5;
+    let position = 0;
+    let positionNext = window.innerHeight;
+    const sectionArray = document.getElementsByClassName("scroll-section");
+    const buttonArray = document.getElementsByClassName("scroll-button");
+
+    // ASSIGNS POSITIONS TO SECTIONS
+    for (let i = 0; i < sectionArray.length; i++) {
+        position = sectionArray[i].getBoundingClientRect().top;
+
+        // SETS THE POSITION OF NEXT SECTION IF THERE IS ONE
+        if (sectionArray[ i + 1 ]) {
+            positionNext = sectionArray[ i + 1 ].getBoundingClientRect().top;
+        }
+
+        // APPLIES CURRENT CLASS TO CURRENT SECTION AND REMOVES OTHERS
+        if ( position < trigger && positionNext > trigger ) {
+            buttonArray[i].classList.add("current");
+            buttonArray[i].scrollIntoView({ behavior: 'smooth'});
+        } else {
+            buttonArray[i].classList.remove("current");
+        }
+
+        // RESETS NEXT POSITION
+        positionNext = window.innerHeight;
+
+    }
+});
 
 
-    // VARIABLE ASSIGNMENT
 
-    if (sectionZero) {
-        sectionZeroPosition = sectionZero.getBoundingClientRect().top;
-    } else {
-        sectionZeroPosition = defaultPosition;
-    }
-    if (sectionOne) {
-        sectionOnePosition = sectionOne.getBoundingClientRect().top;
-    } else {
-        sectionOnePosition = defaultPosition;
-    }
-    if (sectionTwo) {
-        sectionTwoPosition = sectionTwo.getBoundingClientRect().top;
-    } else {
-        sectionTwoPosition = defaultPosition;
-    }
-    if (sectionThree) {
-        sectionThreePosition = sectionThree.getBoundingClientRect().top;
-    } else {
-        sectionThreePosition = defaultPosition;
-    }
-    if (sectionFour) {
-        sectionFourPosition = sectionFour.getBoundingClientRect().top;
-    } else {
-        sectionFourPosition = defaultPosition;
-    }
-    if (sectionFive) {
-        sectionFivePosition = sectionFive.getBoundingClientRect().top;
-    } else {
-        sectionFivePosition = defaultPosition;
-    }
-    if (sectionSix) {
-        sectionSixPosition = sectionSix.getBoundingClientRect().top;
-    } else {
-        sectionSixPosition = defaultPosition;
-    }
-    if (sectionSeven) {
-        sectionSevenPosition = sectionSeven.getBoundingClientRect().top;
-    } else {
-        sectionSevenPosition = defaultPosition;
-    }
-    if (sectionEight) {
-        sectionEightPosition = sectionEight.getBoundingClientRect().top;
-    } else {
-        sectionEightPosition = defaultPosition;
-    }
 
-    // CLASS ADD REMOVE
 
-    if(sectionZero) {
-        if (sectionZeroPosition < trigger && sectionOnePosition > trigger) {
-            navZero.classList.add("current");
-            navZero.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navZero.classList.remove("current");
-        }
-    }
-    if(sectionOne) {
-        if (sectionOnePosition < trigger && sectionTwoPosition > trigger) {
-            navOne.classList.add("current");
-            navOne.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navOne.classList.remove("current");
-        }
-    }
-    if(sectionTwo) {
-        if (sectionTwoPosition < trigger && sectionThreePosition > trigger) {
-            navTwo.classList.add("current");
-            navTwo.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navTwo.classList.remove("current");
-        }
-    }
-    if(sectionThree) {
-        if (sectionThreePosition < trigger && sectionFourPosition > trigger) {
-            navThree.classList.add("current");
-            navThree.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navThree.classList.remove("current");
-        }
-    }
-    if(sectionFour) {
-        if (sectionFourPosition < trigger && sectionFivePosition > trigger) {
-            navFour.classList.add("current");
-            navFour.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navFour.classList.remove("current");
-        }
-    }
-    if(sectionFive) {
-        if (sectionFivePosition < trigger && sectionSixPosition > trigger) {
-            navFive.classList.add("current");
-            navFive.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navFive.classList.remove("current");
-        }
-    }
-    if(sectionSix) {
-        if (sectionSixPosition < trigger && sectionSevenPosition > trigger) {
-            navSix.classList.add("current");
-            navSix.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navSix.classList.remove("current");
-        }
-    }
-    if(sectionSeven) {
-        if (sectionSevenPosition < trigger && sectionEightPosition > trigger) {
-            navSeven.classList.add("current");
-            navSeven.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navSeven.classList.remove("current");
-        }
-    }
-    if(sectionEight) {
-        if (sectionEightPosition < trigger) {
-            navEight.classList.add("current");
-            navEight.scrollIntoView({ behavior: 'smooth'});
-        } else {
-            navEight.classList.remove("current");
-        }
-    }
-}
-  
-window.addEventListener("scroll", navCurrent);
+
+
 
 
 
@@ -207,13 +98,13 @@ document.addEventListener("mousemove", e => {
 
 // CASE STUDY CARDS CURSOR
 
-const caseItems = document.getElementsByClassName("case-item");
+const caseList = document.getElementsByClassName("case-item");
 
-for (let i = 0; i < caseItems.length; i++) {
-    caseItems[i].addEventListener("mouseover", () => {
+for (let i = 0; i < caseList.length; i++) {
+    caseList[i].addEventListener("mouseover", () => {
         cursor.classList.add("cursor-eyes");
     });
-    caseItems[i].addEventListener("mouseout", () => {
+    caseList[i].addEventListener("mouseout", () => {
         cursor.classList.remove("cursor-eyes");
     });
 }
