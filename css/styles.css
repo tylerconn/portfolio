@@ -30,7 +30,7 @@
     --fw-extra-bold: 800;
     
     /* FONT SIZES */
-    --fs-hello: clamp(4.6rem, calc(16vw - 0.5rem), 9.4rem);
+    --fs-hello: clamp(0rem, 20vw, 20vh);/*clamp(4.6rem, calc(16vw - 0.5rem), 9.4rem);*/
     --fs-chat: 15.6vw;
     --fs-title: clamp(4.2rem, calc(15vw - 0.25rem), 8.7rem);
     --fs-section-head: clamp(3.4rem, calc(12vw - 0.2rem), 7rem);
@@ -226,9 +226,45 @@ a {
 .box-footer {
     gap: var(--spacing-medium);
 }
+.box-hello {
+    height: calc(100% - (var(--spacing-gutter) * 2) - var(--fs-base));
+    min-height: calc(100% - (var(--spacing-gutter) * 2) - var(--fs-base));
+}
+.box-greeting {
+    flex: 0 0 auto;
 
+}
+.box-greeting-bottom {
+    flex: 1 2 auto;
+    gap: var(--spacing-medium);
+}
+.box-hand {
+    padding: var(--spacing-);
+    flex: 1 2 auto;
+    position: relative;
+    justify-content: center;
+    align-items: end;
+}
+.hand {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    max-height: 80%;
+    width: fit-content;
+    margin-right: var(--spacing-medium);
+    animation-name: wave;
+    animation-duration: 700ms;
+    animation-iteration-count: 2;
+}
+.box-intro {
+    flex: 0 0 auto;
+    justify-content: end;
 
-
+}
+.box-scroll {
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 /* TEXT CLASSES */
 
@@ -366,13 +402,6 @@ a {
 }
 
 
-.box-hello {
-    height: calc(100% - (var(--spacing-gutter) * 2) - var(--fs-base));
-    max-height: calc(100% - (var(--spacing-gutter) * 2) - var(--fs-base));
-    flex-wrap: nowrap;
-    justify-content: space-between;
-
-}
 .shrink {
     flex: 0 2 10%;
     flex-direction: row;
@@ -391,14 +420,12 @@ a {
     animation-duration: 700ms;
     animation-iteration-count: 2;
 }
-.illustration {
-    height: 100%;
-    object-fit: contain;
-}
+
 .greeting {
     font-weight: var(--fw-semi-bold);
     text-transform: uppercase;
-    font-size: clamp(6rem, 20vw, 11rem);
+    /*font-size: clamp(6rem, 20vw, 11rem);*/
+    font-size: var(--fs-hello);
 }
 .intro {
     font-weight: var(--fw-semi-bold);
@@ -505,7 +532,9 @@ a {
     text-transform: uppercase;
 }
 
-
+.border {
+    border: 0.2rem solid var(--primary-blackish)
+}
 
 .current {
     flex: 3;
@@ -519,7 +548,7 @@ a {
 @media (min-width: 900px) {
     :root {
 
-
+        --fs-hello: clamp(0rem, calc( 13.3vw - 3.1rem ), 20vh);
         --fs-chat: calc( 15.6vw - 3.7rem );
     }
     html {
@@ -673,6 +702,14 @@ a {
     }
 
 
+}
+@media (min-width: 1200px) {
+    .box-greeting-bottom {
+        flex-direction: row-reverse;
+    }
+    .box-intro {
+        max-width: 50%;
+    }
 }
 
 @keyframes wave {
