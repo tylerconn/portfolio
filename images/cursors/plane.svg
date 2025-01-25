@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 166.71 113.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Artboard">
+    <g>
+      <path class="cls-1" d="M2.5,36.25L164.21,2.5,45.64,62.26c-1.28-.77-2.54-1.53-3.79-2.28C20.05,46.84,2.5,36.25,2.5,36.25Z"/>
+      <path class="cls-1" d="M164.21,2.5l-39.55,107.4s-15.85-9.55-36.12-21.78c-6.85-4.13-14.2-8.56-21.62-13.03L164.21,2.5Z"/>
+      <polygon class="cls-1" points="164.21 2.5 66.92 75.09 57.9 110.71 45.64 62.27 45.64 62.26 164.21 2.5"/>
+      <path class="cls-1" d="M88.54,88.12l-30.64,22.59,9.02-35.62c7.42,4.47,14.77,8.9,21.62,13.03Z"/>
+    </g>
+  </g>
+</svg>

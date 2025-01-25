@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.24 127.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Artboard">
+    <g>
+      <circle class="cls-2" cx="63.62" cy="63.62" r="61.12"/>
+      <g>
+        <line class="cls-1" x1="34.43" y1="39.22" x2="58.27" y2="39.22"/>
+        <path class="cls-1" d="M92.81,39.22h-25.36v38.12h-7.79"/>
+      </g>
+      <path class="cls-1" d="M95.66,79.89c0,13.8-14.35,24.99-32.04,24.99s-32.04-11.19-32.04-24.99"/>
+    </g>
+  </g>
+</svg>
