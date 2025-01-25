@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, button {
     line-height: 1;
 }
 body {
-    margin: 0 0 9.8rem 0;
+    margin: 0 0 11.3rem 0;
     font-family: Mori, Helvetica, sans-serif;
     color: var(--primary-blackish);
     background-color: var(--primary-whitish);
@@ -397,7 +397,7 @@ a {
 
 /* HELLO SECTION */
 .section-hello {
-    height: calc(100vh - 8rem);
+    height: calc(100vh - 11.3rem);
 
 }
 
