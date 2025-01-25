@@ -1,47 +1,13 @@
-/* SECTION ELEMENTS */
+const sectionArray = document.getElementsByClassName("scroll-section");
+const buttonArray = document.getElementsByClassName("scroll-button");
 
-const sectionZero = document.getElementById("section-zero");
-const sectionOne = document.getElementById("section-one");
-const sectionTwo = document.getElementById("section-two");
-const sectionThree = document.getElementById("section-three");
-const sectionFour = document.getElementById("section-four");
-const sectionFive = document.getElementById("section-five");
-const sectionSix = document.getElementById("section-six");
-const sectionSeven = document.getElementById("section-seven");
-const sectionEight = document.getElementById("section-eight");
+// SCROLL ACTION FOR NAV BUTTONS
 
-
-/* BUTTON SCROLLS TO SPECIFIC SECTION */
-
-function menuButtonZero() {
-    sectionZero.scrollIntoView({ behavior: 'smooth'});
+for (let i = 0; i < buttonArray.length; i++) {
+    buttonArray[i].addEventListener("click", () => {
+        sectionArray[i].scrollIntoView({ behavior: "smooth" });
+    });
 }
-function menuButtonOne() {
-    sectionOne.scrollIntoView({ behavior: 'smooth'});
-}
-function menuButtonTwo() {
-    sectionTwo.scrollIntoView({ behavior: 'smooth'});
-}
-function menuButtonThree() {
-    sectionThree.scrollIntoView({ behavior: 'smooth'});
-}
-function menuButtonFour() {
-    sectionFour.scrollIntoView({ behavior: 'smooth'});
-}
-function menuButtonFive() {
-    sectionFive.scrollIntoView({ behavior: 'smooth'});
-}
-function menuButtonSix() {
-    sectionSix.scrollIntoView({ behavior: 'smooth'});
-}
-function menuButtonSeven() {
-    sectionSeven.scrollIntoView({ behavior: 'smooth'});
-}
-function menuButtonEight() {
-    sectionEight.scrollIntoView({ behavior: 'smooth'});
-}
-
-
 
 
 
@@ -51,8 +17,6 @@ window.addEventListener("scroll", () => {
     const trigger = window.innerHeight * 0.5;
     let position = 0;
     let positionNext = window.innerHeight;
-    const sectionArray = document.getElementsByClassName("scroll-section");
-    const buttonArray = document.getElementsByClassName("scroll-button");
 
     // ASSIGNS POSITIONS TO SECTIONS
     for (let i = 0; i < sectionArray.length; i++) {
