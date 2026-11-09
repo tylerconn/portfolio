@@ -51,6 +51,7 @@
     --our-house-blue: #1724A9;
     --our-house-lavender: #9EAEE5;
     --our-house-pink: #F0E4EF;
+    --parks-dept-primary: #FFEAA3;
 
 
     /* SPACING */
@@ -186,6 +187,13 @@ a {
     background-color: var(--our-house-lavender);
     color: var(--primary-blackish);
 }
+.bs-pd-prim {
+    box-shadow: inset 0 calc(clamp(1.7rem, calc(6vw - 0.1rem), 3.5rem) * -1) var(--parks-dept-primary);
+}
+.bg-pd-prim {
+    background-color: var(--parks-dept-primary);
+    color: var(--primary-blackish);
+}
 /* STRUCTURAL CLASSES */
 
 .section-start {
@@ -200,6 +208,7 @@ a {
 .box {
     padding: var(--spacing-medium);
     gap: var(--spacing-medium);
+    flex: 1;
 }
 .box-title-section {
     padding: 0 var(--spacing-medium);
@@ -224,7 +233,8 @@ a {
 }
 .box-column {
     flex: 1;
-    gap: var(--spacing-small)
+    gap: var(--spacing-small);
+
 }
 .box-footer {
     gap: var(--spacing-medium);
@@ -295,10 +305,14 @@ a {
     text-transform: uppercase;
     margin-bottom: var(--spacing-text);
 }
+.sequence {
+    font-size: var(--fs-section-head);
+    font-weight: var(--fw-semi-bold);
+}
 .text {
     line-height: 1.3;
     text-indent: 20%;
-    max-width: 60rem;
+    /*max-width: 60rem; */
 }
 .text-footer {
     line-height: 1.3;
@@ -590,6 +604,8 @@ a {
     }
     .box-row {
         flex-direction: row;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
     }
     .box-footer {
         flex-direction: row-reverse;
