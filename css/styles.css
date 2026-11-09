@@ -31,7 +31,7 @@
     
     /* FONT SIZES */
     --fs-hello: clamp(0rem, 20vw, 20vh);/*clamp(4.6rem, calc(16vw - 0.5rem), 9.4rem);*/
-    --fs-chat: 15.6vw;
+    --fs-chat: 15vw;
     --fs-title: clamp(4.2rem, calc(15vw - 0.25rem), 8.7rem);
     --fs-section-head: clamp(3.4rem, calc(12vw - 0.2rem), 7rem);
     --fs-case-list: clamp(2.5rem, calc(9vw - 0.15rem), 5.3rem);
@@ -52,6 +52,8 @@
     --our-house-lavender: #9EAEE5;
     --our-house-pink: #F0E4EF;
     --parks-dept-primary: #FFEAA3;
+    --cgi-prim: #CBC3E6;
+    --cgi-prim-dark: #200A58;
 
 
     /* SPACING */
@@ -193,6 +195,14 @@ a {
 .bg-pd-prim {
     background-color: var(--parks-dept-primary);
     color: var(--primary-blackish);
+}
+.bg-cgi-prim {
+    background-color: var(--cgi-prim);
+    color: var(--primary-blackish);
+}
+.bg-cgi-dark {
+    background-color: var(--cgi-prim-dark);
+    color: white;
 }
 /* STRUCTURAL CLASSES */
 
@@ -566,7 +576,7 @@ a {
     :root {
 
         --fs-hello: clamp(0rem, calc( 13.3vw - 3.1rem ), 20vh);
-        --fs-chat: calc( 15.6vw - 3.7rem );
+        --fs-chat: calc( 15.4vw - 3.7rem );
     }
     html {
         cursor: none;
