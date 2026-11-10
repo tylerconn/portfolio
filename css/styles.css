@@ -321,7 +321,7 @@ a {
 }
 .text {
     line-height: 1.3;
-    text-indent: 20%;
+    /*text-indent: 20%;*/
     /*max-width: 60rem; */
 }
 .text-footer {
